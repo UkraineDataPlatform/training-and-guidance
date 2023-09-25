@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ukraine Data Platform | Documentation | Latest News</title>
+</head>
+<body>
+<a href="#top"></a>
+
+<!-- PRIMARY NAVIGATION (NO NEED TO TOUCH THIS) -->
+
+<header>
+    <nav>
+        <img class="wg-logo" src="assets/images/welsh-government-logo.png" alt="Welsh Government">
+        <!-- <a href="#" class="language-selector">Cymraeg</a> -->
+        <a href="index.html">Home</a>
+        <a href="latest-news.html">Latest News</a>
+        <a href="user-guide.html">User Guide</a>
+        <a href="training-materials.html">Training Materials</a>
+        <a href="support-model.html">Support Model</a>
+        <a href="move-on.html">Move on User Guide</a>
+    </nav>
+</header>
+<main>
+
+    <!-- SIDE NAVIGATION -->
+
+    <aside>
+        <div>
+            <a href="#top">Latest News</a>
+        </div>
+        <details>
+            <summary class="chapter">News articles</summary>
+            <ul>
+                <li><a href="#udp-queries">Ukraine Data Platform Queries</a></li>
+                <li><a href="#changes-cross-boundary">Changes to Cross Boundary Re-matching Process</a></li>
+                <li><a href="#newsletter-9">Announcing our new information hub</a></li>
+                <li><a href="#policy-clarification">Policy clarification: feedback to questions raised at the drop-in sessions</a></li>
+                <li><a href="#newsletter-8">Keeping your records up to date</a></li>
+                <li><a href="#newsletter-7">Issue 7 - 09 Sep 2022</a></li>
+                <li><a href="#newsletter-6">Issue 6 - 02 Sep 2022</a></li>
+                <li><a href="#newsletter-5">Issue 5 - 12 Aug 2022</a></li>
+                <li><a href="#newsletter-4">Issue 4 - 29 Jul 2022</a></li>
+                <li><a href="#newsletter-3">Issue 3 - 13 Jul 2022</a></li>
+                <li><a href="#newsletter-2">Issue 2 - 28 Jun 2022</a></li>
+                <li><a href="#newsletter-1">Issue 1 - 17 Jun 2022</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary class="chapter">System updates</summary>
+            <ul>
+                <li><a href="#release-note-6">Release Note – 05 Jul 2023</a></li>
+                <li><a href="#release-note-5">Release Note – 03 Apr 2023</a></li>
+                <li><a href="#release-note-4">Release Note – 22 Feb 2023</a></li>
+                <li><a href="#release-note-3">Release Note – 25 Jan 2023</a></li>
+                <li><a href="#release-note-2">Release Note - 11 Nov 2022</a></li>
+                <li><a href="#live-rollout">Live Rollout - 21 Jun 2022</a></li>
+                <li><a href="#release-note-1">Release Note - 10 Aug 2022</a></li>
+                <li><a href="#release-newsletter-1">Release Note - 14 Jul 2022</a></li>
+            </ul>
+        </details>
+        <div class="aside-margin-block"></div>       
+    </aside>
+
+    <!-- MAIN PAGE CONTENT -->
+
+    <div class="content">
+        <h1>Ukraine Data Platform Development News</h1>
+
+        <!-- INSERT NEW NEWS ARTICLES BELOW THIS COMMENT
+            All article tags need a unique id and a class="y-target"
+            All news articles need a <p> underneath the <h2> as follows:
+            <p class="published-author">Published on [PUBLICATION DATE] &nbsp | &nbsp Written by [AUTHOR'S NAME]</p> -->
+            <article id="release-note-6" class ="y-target">
+                <h2>Release Note – 05 July 2023</h2>
+                <p class="published-author">Published on 06 July 2023 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>This release introduces the move-on functionality into the UDP. As such the move-on spreadhseet will become read-only, with some of the existing data from the spreadsheet being uploaded to the Ukraine Data Platform on the 6 July 2023.</p>
+                <p>A full list of changes are below:</p>
+                <ul>
+                    <li>Update the data load to automatically upload EoI records on the UDP.</li>
+                    <li>Move-on process/search ability: 
+                        <ul>
+                            <li>Revised household housing needs; </li>
+                            <li>Ability to capture the EoI accommodation offer; </li>
+                            <li>Search for available properties within Local Authority area/across Wales wide. </li>
+                            <li>Ability to tailor the search filters on available properties to match the household housing needs; </li>
+                            <li>Create property reservation; </li>
+                            <li>Manage the property reservation; </li>
+                            <li>Create automatic placement tracking record for successfully matched properties.</li>
+                        </ul>
+                    </li>
+                </ul>     
+                <p>The <a href="user-guide.html">User Guide</a> has been updated to reflect these changes, along with a stand alone <a href="move-on.html">Move on Process User Guide</a></p>
+   
+            </article>
+            <div class="article-divider"></div>
+            <article id="release-note-5" class ="y-target">
+                <h2>Release Note – 03 April 2023</h2>
+                <p class="published-author">Published on 06 April 2023 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>This release covers the following changes:</p>
+                <ul>
+                    <li>Removal of function buttons on many of the screens (e.g., Deactivate, Delete, +New) to encourage the platform to be used as trained and documented.</li>
+                    <li>Remove host from household for No Shows. This allows the user to the remove the host from a household if the IS status on the Applicant is equal to status No-Show (IS21, IS22, IS23).</li>
+                    <li>Synchronising of information between the household and applicant placement tracking (PT) records. Changes made to existing household PT will be reflected in the associated Applicant PT records.</li>
+                    <li>Ability to enter historical placement tracking records against a household. Historical PTs are identified, based on if an End Date is added during creation.  Historical PTs don’t impact the ownership assignment of the household, and Historical PTs also won’t impact Host or Welcome Centre allocation.</li>
+                    <li>Ability to remove the Lead Applicant. This allows a user to set the read only field “Is this Person the Lead Applicant” to No. This will also resolve an incident where a Household could not be split, because both Applicants were Lead Applicants.</li>
+                </ul>     
+                <p>The <a href="user-guide.html">User Guide</a> has been updated to reflect these changes.</p>
+   
+            </article>
+            <div class="article-divider"></div>
+            <article id="release-note-4" class ="y-target">
+                <h2>Release Note – 22 February 2023</h2>
+                <p class="published-author">Published on 21 February 2023 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>The highlight of this release is the new data feeds from DLUHC, which provide missing cross border information, status of applications and important sponsor safeguarding information.</p>
+                <p><b>Fixes:</b></p>
+                <ul>
+                    <li>Unshare records routine that corrects some sharing issues.</li>
+                    </ul>
+                </p>
+            <p><b>New features:</b></p>
+            <ul>
+                <li>Home Office/PNC Checks data import and fields. Sponsors and applications will be flagged if a sponsor fails the Home Office checks.</li>
+                <li>Cross Border Rematches/Reassignments data import and fields. Applicant data will be available in the platform together a flag to indicate that the applicant has been reassigned from another home nation.</li>
+                <li>Voided Applications data import and fields. Applications will be flagged if the application has become void.</li>
+                <li>Withdrawn Applications import and fields. Applications will be flagged if the application has been withdrawn.</li>
+                <li>Refused Applications import and fields. Applications will be flagged if the application has been refused.</li>
+                <li>First Arrival Date import and fields. The date that the applicant first arrived can be found in the personal tab in Applicants.</li>
+                <li>Unaccompanied Minors (UAM) field added to Applicants – this can be set to Yes/No and should be used where a UAM is travelling unaccompanied or is the result of parents/guardians leaving a child unaccompanied with a host.</li>
+                <li>No Non-essential Communications field/flag added to Applicants – this can be set to Yes/No and should be used when an applicant or sponsor/Host has requested not to communicated too with non-essential information.</li>
+                <li>New placement type "Temporarily Left": adding new option to PT type field This is to cater for applicants that temporarily return to the Ukraine (e.g. holiday or family issue) but intend to return to their accommodation. The local authority placement tracking field in these cases should remain with the local authority raising the PT.</li>
+            </ul>
+   
+            </article>
+            <div class="article-divider"></div>
+            <article id="release-note-3" class ="y-target">
+                <h2>Release Note – 25 January 2023</h2>
+                <p class="published-author">Published on 01 February 2023 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>The highlight of this release is the Sponsor deduplication process, which will make the system more convenient for users and will increase the data quality, as well as improved logic related to Placement Tracking and Welcome Centres, in order to better accommodate all possible scenarios. The misaligned records field is included in this release as well in order to resolve issues with records located in different Local Authorities.</p>
+                <p><b>Fixes:</b></p>
+                <ul>
+                    <li>Duplicate sponsors</li>
+                    <li>Wrong End Dates on PTs</li>
+                    <li>Owner on Household PT not aligned with owner Applicant PT</li>
+                    </ul>
+                </p>
+            <p><b>New features</b></p>
+            <ul>
+                <li>Changes to Family Member Network Flow</li>
+                <li>New Sponsor Deduplication Flow. This deduplicates new sponsor records as they are loaded.</li>
+                <li>New Host Assignment One Person Household Flow. If there is only one person in a household the Sponsor/host will be automatically be set on Household.</li>
+                <li>New Host and Host Address field on Household</li>
+                <li>Changes to Placement Tracking - new fields</li>
+                <li>Changes to Placement Tracking - adding an Applicant</li>
+                <li>Changes to Welcome Centre field and logic on Household.</li>
+                <li>New Sponsor journey statuses and logic: If Sponsor is set to Withdrawn, Rejected, or Duplicated the record will be made inactive providing there are no households attached. </li>
+                <li>New Misaligned records related to Household flow and field. This is to enable System Admin to detect and correct any historic data anomalies.</li>
+            </ul>
+   
+            </article>
+            <div class="article-divider"></div>
+            <article id="udp-queries" class ="y-target">
+                <h2>Ukraine Data Platform Queries</h2>
+                <p class="published-author">Published on 22 November 2022 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>If you have a query relating to how you use the Ukraine Data Platform please:
+                <ul>
+                    <li>Check the available <a href="user-guide.html">documentation</a> and <a href="training-materials.html">videos</a> on this site in the first instance. </li>
+                    <li>If you are unable to find the answer to your question, please speak with your local data champion.</li>
+                    <li>If they are unable to resolve your query, they will contact us through the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a> mailbox to seek further assistance.</li>
+                    </ul>
+                </p>
+            <p>The Nation of Sanctuary mailbox is for non-urgent platform queries only.  For urgent queries or safeguarding concerns please contact the <a href="mailto:Ukraine.Safeguarding@gov.wales">Ukraine.Safeguarding@gov.wales</a> mailbox to ensure teams with the appropriate expertise can respond to your concern.</p>
+            <p>Due to the breadth of queries that we receive through the mailbox, we will be prioritising messages relating to a technical issue or where the answer to a question  isn’t available on this site.</p>        
+            </article>
+            <div class="article-divider"></div>
+
+            <article id="changes-cross-boundary" class ="y-target">
+            <h2>Changes to Cross Boundary Re-matching Process</h2>
+            <p class="published-author">Published on 18 November 2022 &nbsp | &nbsp Written by Joshua Dickinson</p>
+            <h5>Following the email sent from John Davies on 17 November there have been changes to how you need to process cross boundary re-matching processes. See below for more information:</h5>
+            <p>We have now got the Nation of Sanctuary contact centre ready to process cross-border re-assignments through the Foundry system as an alternative to raising tickets via Jira.</p>
+            <p>Guidance is being drafted to ensure the new processes are fully explained but we are starting to process re-assignments through this new method. The new guidance should be available within the next fortnight and will be informed by any unforeseen problems we run into as we tentatively start processing cases.</p>
+            <p>What this means in practice is that the contact centre will start working through the backlog of both inbound and outbound re-assignment requests which have been submitted to Jira but not processed by the UK Government. For outbound re-assignments, the contact centre will record these on Foundry which may result in you receiving queries from English/Northern Irish Las – these may be about fairly historic cases but we’re going to have to catch up with cases over the next couple of weeks. For inbound re-assignments, the contact centre will be in touch about whether you want to accept particular cases from elsewhere.</p>
+            <p>When inbound cases have been accepted there may be a bit of a lag in that data appearing in the Ukraine Data Platform to begin with. This is because UK Government have designed a data feed but until we start to populate it by processing re-assignments, we won’t know if it works effectively. Hopefully we’ll see a smooth process of that data appearing in your area of the UDP but we’ll monitor this.</p>
+            <p>Until we see the process working, our suggestion is to hold off raising new re-assignment cases with the contact centre or Jira but we’ll review things next week and provide an update accordingly. Please don’t forget that when an outbound re-assignment happens, your local authority will lose access to the household’s data in the UDP so record what you need to for local record-keeping.</p>
+                
+        </article>
+        <div class="article-divider"></div>
+        <article id="release-note-2" class="y-target">
+            <h2>Release Note - 11 November 2022</h2>
+            <p class="published-author">Published on 11 November 2022 &nbsp | &nbsp Written by William Rees</p>
+            <h3>Fixes</h3>
+            <ul>
+                <li>The Family Member Network flow was updated to resolve a minor bug.</li>
+                <li>Create Placement Tracking’s to Applicants flow issue.  A step was added to fetch the dates of the PT, this will ensure that the correct dates are used on the PT’s.</li>
+                <li>Applicant field on Application was temporary editable which could lead to accidental deletion. This field is now read only. </li>
+            </ul>
+            <h3>New features</h3>
+            <ul>
+                <li>Journey tracking data fields added to Household. Five new fields (Arrival Into UK Date, Arrival Hub ETA, Point of Arrival, Arrival Hub, Welcome Centre ETA) were added to Household, to capture Journey Tracking data. To be used by the contact centre.</li>
+                <li>Health Board Info tab added to Applicant. To be used by the health boards.</li>
+                <li>Age field on Applicant & flows to calculate field. Please note if DOB is changed you will need to press the refresh button to see the new age value.</li>
+                <li>The UK arrival date can now only be edited by the contact centre.</li>
+                <li>“Self Supporting” reason code added to Status Reason field on Applicant. To be used when an applicant is now self-supporting (e.g., has rented own accommodation). Should be used with journey status code set to IS05 or SS10.</li>
+                <li>“Repatriation” reason code added to Status Reason field on Applicant. To be used when applicant has returned to the Ukraine. Should be used with journey status code set to IS05 or SS10.</li>
+                <li>“Support Ended” reason code added to Status Reason field on Applicant. To be used when support is no longer required (e.g., applicant deceased). Should be used with journey status code set to IS05 or SS10.</li>
+            </ul>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-9" class="y-target">
+            <h2>Announcing our new information hub</h2>
+            <p class="published-author">Published on 31 October 2022 &nbsp | &nbsp Written by Joshua Dickinson</p>   
+            <p>Since the launch of the Homes for Ukraine Data Platform (UDP), we have been working to improve how we share our training, user guides and other UDP based information with you that ensures access for all.</p>
+            <p>This week, we went live with the new UDP Documentation and Information Hub which can be accessed via this link - <a href="https://ukrainedataplatform.github.io/documentation/">Ukraine Data Platform and Information Hub</a></p>
+            <p>We have tried to make the user guide easier to navigate on the site and have added our new ‘bite size’ training videos to help with key aspects of using the platform. You can also find previous versions of our Newsletter and other helpful information on system updates.</p>
+            <p>Grab a cuppa and take a quick look!  If you can think of ways that we can improve the Hub, please let us know via the Nation of Sanctuary Survey mailbox.  </p>
+            <h3>Policy clarifications</h3>
+            <p>A number of questions were raised at our Data Champion drop-in sessions, which required clarification from Policy colleagues. We now have the answers to those questions and you can find both the questions and answers in the <a href="#policy-clarification">Policy clarification update</a>.</p>
+            <h3>Data Quality</h3>
+            <p>We are now analysing the data in the platform on a weekly basis in the push for quality information to aid:</p>
+            <ul>
+                <li>The next round of UK Gov reporting and funding</li>
+                <li>Ensuring that other agencies using the platform are presented with accurate information</li>
+                <li>Ensuring that our GDPR requirements are met</li>
+                <li>Ensuring that information presented to, and used by, our stakeholders in correct </li>
+            </ul>
+            <p>Example: As of 19/10/22 we believe that the estimated placement tracking completion rates across Wales are only 49% for the individual sponsor route and 34% for the super sponsor route.</p>
+            <p>Below are the data priorities that we need all local authorities to action by no later than the 11th November. </p>
+            <table>
+                <tr>
+                    <th>Priority</th>
+                    <th>Item that requires update </th>
+                    <th>Guidance </th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Placement Tracking Records on the individual and super sponsorship schemes, as we need to identify when individuals arrived (and in some cases departed) with their hosts. There should be a placement record with no end date if the placement is still active.<br> 
+                    Please note; a placement tracking record is still required even if the household are in a Welcome Centre or other such accommodation. <br>
+                    Please use the Household view “Households without Placement Tracking” to identify possible data omissions. <br>
+                    Ensure that the end date is after the start date.</td>
+                    <td>
+                        <a href="user-guide.html#creating-placement-record">Data Platform User Guide Creating/Closing a Placement Record
+                        </a><br>
+                        <a href="user-guide.html#rematch-across-national-borders">Re-match across UK national borders (either Scheme)</a><br>
+                        <a href="training-materials.html#creating-and-closing-a-placement-record">Creating and closing a placement record</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Please ensure any Sponsor/Host that has failed their checks or is believed to be a safeguarding risk has their Sponsor/Host Journey Status set to “Rejected” and Status Reason set to “Duplicate”. This will avoid the sponsors details being used for mailing.</td>
+                    <td><a href="user-guide.html#changing-journey-status">Changing Journey Status</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Please ensure any Sponsor/Host that has withdrawn for the hosting scheme has their Sponsor/Host Journey Status set to “Withdrawn” and Status Reason set to “Duplicate”. This will avoid the sponsors details being used for mailing</td>
+                    <td><a href="user-guide.html#changing-journey-status">Changing Journey Status</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Applicant journey status code updated</td>
+                    <td>
+                        <a href="user-guide.html#changing-journey-status">Changing Journey Status</a><br>
+                        <a href="training-materials.html#changing-status-codes">Changing status codes (video and transcript)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Applicant status reason updated</td>
+                    <td>
+                        <a href="user-guide.html#changing-journey-status">Changing Journey Status</a><br>
+                        <a href="user-guide.html#updating-multiple-records">Updating multiple records with the same journey status</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Applicant checks updated, or Applicant checks updated via household</td>
+                    <td>
+                        <a href="user-guide.html#updating-checks-box">Updating the checks box</a><br>
+                        <a href="user-guide.html#bulk-updates-checks">Bulk updates to checks </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Sponsor checks updated (please don’t update every duplicate sponsor record) </td>
+                    <td></td>
+                </tr>
+            </table>
+            <h3>New UDP Search Function</h3>
+            <p>A new ‘out of area search’ function has been developed to enable you to find basic information about any record within the platform, regardless of which local authority the record is assigned to.</p>
+            <p>Find out how to use it on the new Homes for Ukraine Documentation and Information Hub at this link – <a href="user-guide.html#searching-record-outside">Searching for a record outside of your local authority</a>.</p>
+            <p>You can also access the information from within the Homes for Ukraine Data Platform by using the ‘?’ Icon in the top right corner of the application window.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="policy-clarification" class="y-target">
+            <h2>Policy clarification: feedback to questions raised at the drop-in sessions</h2>
+            <p class="published-author">Published on 31 October 2022 &nbsp | &nbsp Written by Joshua Dickinson</p>
+            <h3>Jira guidance and training</h3>
+            <h4>The matching process that sees someone leaving Wales for a host in England/Scotland recommends that a JIRA request/record is created. However, many of the champions don’t know how to do this – is there any JIRA guidance/training available? </h4>
+            <p>Whilst the current guidance proposes Jira is used but it’s clear that the results are not as expected. We are meeting with Department for Levelling Up, Housing and Communities (DLUHC) to put in place an alternative approach which involves a single Wales account in Foundry to oversee rematching into and out of Wales. However, it is worth submitting the Jira request to at least have the movement recorded on UKG systems but the new approach will be set out in the next couple of weeks.</p>
+            <p>Our Jira Support Desk is constantly monitored and provides the quickest route to resolution for most cases. If a case needs additional support your engagement lead, our Support Desk team can escalate on your behalf. Furthermore, we cannot guarantee that all mailboxes will be consistently monitored and therefore encourage you to use the Jira Support Desk.</p>
+            <p>We understand that local authorities (LAs) have several questions relating to the Homes for Ukraine Scheme and it is imperative that we are recognising emerging trends, using Jira will be the most effective way to record your issues. LAs should raise issues on the Jira Service Desk: <a href="https://digital.dclg.gov.uk/jira/servicedesk/customer/portal/11/user/login?destination=portal%2F11">Service Desk</a> </p>
+            <p>LAs can also call the Telephone Desk on 0303 444 4445 (9am to 6pm, Monday to Friday). This phoneline is dedicated to LAs only and is not available to the general public. If you have any technical issues or need to register any new users, you can also raise these via the Jira Service Desk.</p>
+            <h3>When does Wales "Duty of Care" end for a Ukrainian</h3>
+            <h4>Ukrainian has returned to Ukraine. If visa is still valid, could they return and what would we be expected to do?</h4>
+            <p>Yes, the UK Ukrainian Schemes appear to allow unlimited travel back and forth once a BRP has been received so in theory there could be an ongoing support need, but it will depend upon circumstances. For instance, Welsh Government (as a sponsor for the super sponsor beneficiaries) has committed to providing 6 months accommodation (as with all sponsors). So, if someone on SS route is still in initial accommodation but then goes and returns within 6 months and wants initial accommodation, we will try to support that. If someone is post-6 months initial arrival or if they are on the Homes for Ukraine individual sponsor route, the local authority has homelessness duties which may need to be engaged. The HfU funding tariff is currently only available for the first 12 months after initial arrival. If someone goes and comes back during that 12 months, local authorities would be expected to provide the same level of support as before. If the return happens after the 12 months, then, at present, we recognise that there is no funding to support an enhanced local authority service so mainstream services may have to be what is on offer. We are pushing UKG to provide Year 2 and 3 funding for the scheme which, if provided, would change this advice.</p>
+            <h4>Ukrainian has found their own accomodation, job, etc... If this situation then breaks down would they need to be supported by the LA's again?</h4>
+            <p>Yes, as above, Ukrainians have a right to LA homelessness assistance for the duration of their 3 year visa.</p>
+            <h4>Ukrainian has left Wales for another part of the UK? </h4>
+            <p>Our view is that where someone has left Wales for another part of the UK, we should try to formally rematch/reassign the case to the onward local authority. Doing so would mean the onward LA receives the remainder of the Integration tariff but also puts a clear ‘end date’ on the Welsh LAs responsibility. However, where a formal rematch/reassignment is not possible, we would still want it recorded that the person has left your area (currently through Jira but this may change shortly) to make that clear. The individual may later return to your area as Ukrainians have freedom to move and settle anywhere in the UK. If that happens within the first 12 months, you may be able to re-claim the remainder of the Integration tariff through another formal rematch/reassignment </p>
+            <h4>Ukrainian in Welcome Centre has returned home for two week holiday, but that was 3 weeks ago - do we release the room/accommodation, what happens if they return? </h4>
+            <p>2 weeks is the standard time we are working towards before a room is reallocated. I would recommend a courtesy call to say the room is being reallocated but unless the current occupant explains they will be back within a day or so, we need to have the room reallocated. The likelihood is that people may have left some belongings in the room so the venue will need to try to contact the absent occupiers to discuss what will happen with those belongings regardless. </p>
+            <h4>Are we still responsible for hosting these if they return, is there a cut off point for returning on both the scheme and Visa?</h4>
+            <p>We are working with Legal Services to understand our ongoing obligations, but our working assumption is that WG (as sponsor) is obligated (morally if not legally) to accommodate people in the first 6 months of their visa being granted. If people return within that period, we expect to be reallocating them another room.  </p>
+            <h4>What are the funding implications if they are away for more than two weeks? </h4>
+            <p>The Welsh Government continues to receive funding for this person even during absence. The funding agreements we have in place with LAs for wraparound support is not always tied to the number of people actually accommodated on any given day. However, where that is the case, the funding for that person would stop if the room is not reallocated. </p>
+            <h4>What is our responsibility of tracing these people when they leave?</h4>
+            <p>The Local Authority’s responsibility is to inform the Contact Centre that someone has not returned. The Contact Centre will try to trace them and record them as missing, if appropriate. </p>
+            <h4>How do we get this data? </h4>
+            <p>We’re working with DLUCH/Palantir on trying to get this sorted.  </p>
+            <h3>Newborns</h3>
+            <h4>Is it possible to add a Ukrainian baby to the UDP, where the mother was expecting it at the time of arrival?  The baby was born in this country and therefore has no UAN, would it be possible to manually add her to the system? Although the baby was not born prior to arrival, it is still a person we are accounting for and resourcing while the family remains </h4>
+            <p>Yes, they need a visa. “A child who is a Ukrainian national, or who is born in the UK after 18 March and has Ukrainian national parents, is eligible for leave to remain under the Ukraine extension scheme. Where the 18 March date is not relevant, there is provision for a child born in the UK to Ukraine parents who had leave to be in the UK before 1 January which has expired.” (Source: Home Office) </p>
+            <p>In terms of whether they need to be added to the UDP, the answer is ‘no’. Our rationale for the UDP data is that individuals are on Homes for Ukraine and we need to know their whereabouts and services for safeguarding assurance and financial reporting to ensure services are provided effectively – but that doesn’t apply where the Ukraine Extension Scheme is the visa held (there is no Integration Tariff available in those circumstances).   </p>
+            <h3>End of Scheme </h3>
+            <h4>What happens to payments following the ends of the initial schemes – will they be extended?</h4>
+            <p>There is no plan to extend payments beyond the 12 month post-arrival period, at present. We have asked UK Government to ensure there are funding tariffs for years 2 and 3 of the visa but we have had no clarity on this as yet. </p>
+
+        </article>
+        <div class="article-divider"></div>
+        <article id="newsletter-8" class="y-target">
+            <h2>Keeping your records up to date</h2>
+            <p class="published-author">Published on 03 October 2022 &nbsp | &nbsp Written by Mark Patterson</p>
+            <p>The Ukraine Data Platform has been live for over two months. It is good to see how many of you have embraced the platform and are using it to manage your day-to-day activities. We are also aware that some may be struggling with using the platform, and as a result, not all records are up to date.</p>
+            <h3>It is important to have up-to-date records in the Data Platform</h3>
+            <p>The data held in the platform is designed to be the true picture of how we are supporting all Ukrainians seeking sanctuary in Wales. You and your colleagues in other local authorities all rely on access to accurate records relating to the individuals you are responsible for. Keeping records in the platform up to date is important because:</p>
+            <ul>
+                <li>The data within the platform will be used to report to the UK Government every quarter, with the next report due in December. Incorrect data could result in incorrect funding for the services you have provided.</li>
+                <li>Multiple stakeholders are drawing information from the platform to inform future policy decisions. If the data is not correct, this may have a negative effect on decision making. </li>
+                <li>Health boards will primarily use the system to trace people who they have lost contact with and for identifying provision and direct of future support. Healthcare services and individual patient outcomes could be affected if records are not up to date.</li>
+                <li>We need it to be up to date to ensure we are communicating with all hosts in Wales, and not just those who acted as sponsors</li>
+            </ul>
+            <p>It is therefore imperative that everyone using the platform ensures their records are up to date, accurate and assigned to the correct local authority. </p>
+            <h3>What you need to do to ensure your data is correct</h3>
+            <ul>
+                <li>Ensure every household/applicant has a placement record that reflects where they have stayed in Wales. This may be one or several records. Placement records will be used to calculate how long guests have either been in host accommodations or welcome centres</li>
+                <li>Complete all household/applicant checks to ensure local support services have been accessed. </li>
+                <li>Complete suitability checks on all sponsors/hosts and any relevant members of their own household and their accommodation. </li>
+            </ul>
+            <h3>What we are doing to help</h3>
+            <p>We are developing a new system view in the platform which will show applicants that do not have an active placement record. We hope this will help you to target your efforts in completing this information and fulfilling your data management responsibilities under GDPR. In addition, the existing user guide shows you how to:</p>
+            <ul>
+                <li>Complete Welcome Centre Checks  for new arrivals</li>
+                <li>Follow the steps to manage new arrivals on the Super Sponsor Scheme and the Individual Sponsor Scheme</li>
+                <li>Open and close placement records</li>
+            </ul>
+            <p>You can also attend one of our weekly drop-in sessions, send us an email or contact your fellow platform users (platform user contact details have recently been shared to enable you to operate as a community).</p>
+            <h3>Get in touch</h3>
+            <p>We hope that by using the guide and with the aid of the forthcoming placements system view, you will be confident to maintain your data. However, we recognise that other challenges can prevent this. Please tell us:</p>
+            <ul>
+                <li>Do you want more training? If so, which processes should we focus on?</li>
+                <li>Could we develop any other functionality to aid you in managing your records?</li>
+                <li>Are there any other barriers affecting your ability to use the data platform for your day-to-day tasks?</li>
+            </ul>
+            <p>Please email <a href="mailto:mark.patterson@gov.wales">mark.patterson@gov.wales</a> with your comments.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-7" class="y-target">
+            <h2>Data Platform Newsletter - Issue 7</h2>
+            <p class="published-author">Published on 09 September 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>This week we bring you news about our work to develop a handy glossary for the Data Platform, how we will use your feedback from the recent user survey, and how we will handle reporting data to UK Government.</p>
+            <h3>System glossary</h3>
+            <p>Following feedback from data platform champions, we are in the process of developing a detailed glossary of the fields that exist within the data platform. As the glossary will cover all of the fields on all screens, it is likely to be a separate document to the user guide due to its size. We will notify you when it is complete and where it can be accessed.</p>
+            <p>To aid understanding of the sponsorship schemes and how to navigate through the processes associated with them, we have included two annexes at the back of the user guide. They provide an overview of the super sponsor and individual sponsor schemes and an explanation of the different status codes.</p>
+            <h3>Data Platform User Survey</h3>
+            <p>Thank you to those of you that completed our user survey over the summer. We were keen to understand your experiences in using the platform so far and to evaluate how to continue to support you as we switch off aspects of the Objective Connect data flow.</p>
+            <p>We are pleased so many of you are growing in confidence with using the platform but we also recognise further support will be required for more complex processes.</p>
+            <p>As a result of your feedback we will develop guidance on how to extract data from the platform in a template that replicates the Objective Connect data. We anticipate that this will help you to maintain local reporting systems you have separately created. In addition, we will also provide further support on filtering data and system views to identify the newest records assigned to you.</p>
+            <p>Please continue to share your feedback on the support you need to your data platform champions.</p>
+            <h3>Dual-running of Data Platform and reporting spreadsheets for UK Government</h3>
+            <p>The data platform allows us to produce the information that is required by UK Government for finance claims relating to their Homes for Ukraine scheme.</p>
+            <p>The latest data returns are required to be completed by 16 September for the period 01 March to 31 August 2022.</p>
+            <p>You have been working to ensure that the information on the Data Platform is accurate and up to date, but we understand that some of you require additional time.</p>
+            <p>To ensure that the information returned to UK Government is accurate we will dual run both the Microsoft Excel forms and produce information from the Data Platform</p>
+            <p>The Excel forms will be used for this quarter only, whilst the Data Platform will be used to quality assure that information for those of you who are up to date within the Platform.</p>
+            <p>Colleagues in Welsh Government have issued the forms to you for completion, and they will need to be returned to us by <b>16 September</b>.</p>
+            <p>Whilst we will be providing you with more time to ensure that the information in the Data Platform is accurate and up to date, we would like this completed by the <b>end of September</b> so that we can move to using it as our sole source for reporting.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-6" class="y-target">
+            <h2>Data Platform Newsletter - Issue 6 <br>(Data Champions Note)</h2>
+            <p class="published-author">Published on 02 September 2022 &nbsp | &nbsp Written by Mark Patterson</p>
+            <p>The purpose of this note is to set out what we need you to do with the Data Platform, planned new releases and to update you on the switch off plans for the Ukraine Objective Connect (OC) data feed from 09 September.</p>
+            <h3>What we need you to do with the Data Platform now</h3>
+            <p>The Ukraine Data Platform has now been live for over a month with very few issues reported, and we now need the platform to become the single source of truth for managing the Homes for Ukraine data.</p>
+            <p>We need all Local Authorities to ensure:</p>
+            <ul>
+                <li>All applicants have a placement record that reflect where they currently are (including history of placements).</li>
+                <li>All applicants have a journey status that reflect their current situation.</li>
+                <li>All applicant check flags (e.g. Interim Payment Made, Welfare visit completed) are updated.</li>
+                <li>All sponsor flags (e.g., Housing Inspection Completed, Basic DBS Check Completed) are updated.</li>
+            </ul>
+            <h3>Planned new functionality to support the switch-off</h3>
+            <p>The following functionality will be released in August / September:</p>
+            <ul>
+                <li>Import and display of arrival data in the platform.</li>
+                <li>Ability to extract information to mimic the OC feeds from the platform – this will enable you to maintain any data feeds into your legacy systems.</li>
+                <li>Ability to quickly edit applicant check fields – this will enable family records to be updated quicker.</li>
+            </ul>
+            <h3>What we plan to use the Data Platform for in September</h3>
+            <p>In September, the intention is to use the UDP to report to UK GOV – however this will depend on maturity of the data in the platform and a validation exercise carried out with the local authorities.</p>
+            <h3>Ukraine Objective Connect feed switch off</h3>
+            <p>On Friday 09 September, we will upload the following data sets to Objective Connect for the last time:</p>
+            <ul>
+                <li>Applications</li>
+                <li>MainApplicant</li>
+                <li>FamilyMemberNetwork</li>
+                <li>HostAddress</li>
+                <li>Sponsor</li>
+                <li>SponsorAddress</li>
+                <li>SponsorHousehold</li>
+            </ul>
+            <p>From this point onwards, local authorities will be able to access this data solely via the UDP.</p>
+            <p>There will be no impact the following Objective Connect feeds as a result of this change:</p>
+            <ul>
+                <li>Hotel and Welcome Centre occupancy / arrivals</li>
+                <li>Unaccompanied Minors</li>
+                <li>Move on Spreadsheet</li>
+                <li>Expressions of Interest</li>
+                <li>Workspaces that include policy documents and toolkits</li>
+            </ul>
+            <p>If there are any queries, please do not hesitate to email <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-5" class="y-target">
+            <h2>Data Platform Newsletter - Issue 5</h2>
+            <p class="published-author">Published on 12 August 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>In this week’s issue we ask for your help with our user research around adoption of the Data Platform and how you access our supporting materials. We also add another drop-in session for live user support, clarify the role of the Data Champion, and share our early thoughts about the future development of the Platform.</p>
+            <h3>Data Platform User Survey</h3>
+            <p>To support the continued development of the Data Platform, we are keen to understand your experiences to date in adopting and embedding current working practices into the system. </p>
+            <p>We have created a short survey to help us identify where we can offer additional guidance and support to help build your confidence in using the system and to ensure you are ready for the upcoming removal of Objective Connect as a source of data. </p>
+            <p><a href="https://www.smartsurvey.co.uk/s/F82HTW/">Nation of Sanctuary Data Platform Survey</a></p>
+            <p>Please make some time to take the survey, it should only take 10 minutes to complete.</p>
+            <h3>Accessing documentation</h3>
+            <p>We are currently reviewing the way we present documentation about the Data Platform to you. It has come to our attention that not everyone is able to access the user guide, training collateral and other supporting materials hosted on Google Drive. We are exploring other hosting options and we need your help in finding a suitable solution.</p>
+            <p>We have prepared the following test page hosted on GitHub and we would like you to tell us by reply whether you can open it successfully in your organisation:</p>
+            <p><a href="https://ukrainedataplatform.github.io/SupportModel">https://ukrainedataplatform.github.io/SupportModel</a></p>
+            <p>A handful of local authorities have already told us that it works for them, so if your organisation is not in the list below, please test the link and tell us if you can access it by replying to this email.</p>
+            <ul>
+                <li>Cardiff</li>
+                <li>Carmarthenshire</li>
+                <li>Rhondda Cynon Taf</li>
+                <li>Ceredigion</li>
+                <li>Monmouthshire</li>
+                <li>Denbighshire</li>
+                <li>Powys</li>
+                <li>Swansea</li>
+                <li>Anglesey</li>
+                <li>Conwy</li>
+                <li>Gwynedd</li>
+                <li>Pembrokeshire</li>
+                <li>Neath Port Talbot</li>
+                <li>Merthyr Tydfil</li>
+            </ul>
+            <p><b>Please note:</b> If we do not hear from you, we will assume you can access it.</p>
+            <h3>Drop-in sessions</h3>
+            <p>Our weekly “drop in” sessions where users can access live support as they begin to use the system have been well attended and we will be continuing to run those.</p>
+            <p>We had feedback that the 10:30 session didn't suit all Local Authorities, so we have added a 14:30 session and set them to an alternating weekly schedule as follows:</p>
+            <ul>
+                <li>Wednesday 17 August: 14:30 to 15:15</li>
+                <li>Wednesday 24 August: 10:30 to 11:30</li>
+            </ul>
+            <p>And so on, giving users the flexibility to attend at a time convenient to them.</p>
+            <p>Outside of these drop-in calls, any issues or bugs you notice in the live system should be directed to your local Data Champion in the first instance, as per the support model.</p>
+            <h3>Featured soundbites</h3>
+            <p>Here are some selected soundbites from recent user discussions, the answers to which may be useful for the collective:</p>
+            <h4>What is the difference between a Sponsor and a Host?</h4>
+            <p><b>Sponsors:</b> those that are sponsoring the applicants’ visas. Dependent on the scheme this could be – Welsh Gov (Super Sponsor scheme), an individual (Individual or family Scheme). The sponsor has legal duty due to the visa and will never change. The sponsor is linked directly to the applicant/application. A sponsor can also be the host but does need a separate record.  Sponsor details can be updated but the link between the sponsor and applicant/application cannot be.</p>
+            <p><b>Hosts:</b> those providing accommodation for an applicant irrespective of scheme. The host is based on where the applicant is currently housed (normally this will be with the sponsor initially).  This is transient and the host and applicant are linked through the placement record.</p>
+            <p>Both host and sponsor use the same functionality but are denoted by a type of either sponsor or host. An added host cannot be a sponsor – sponsor information initially comes in through the data imported from UK Gov.</p>
+            <h4>How should temporary accommodation provided by the Local Authority be handled?</h4>
+            <p>Example scenario: Relationship has broken down with host and Local Authority is providing temporary accommodation for the applicant. In this case the Local Authority is the Host, Sponsor stays the same (i.e., the original visa application). The address of the temporary accommodation should be entered in the placement record.</p>
+            <h4>How should applicants that have left the Local Authority to stay with friends outside of Wales leaving no forwarding address be handled?</h4>
+            <p>In this case include a case note to explain the situation, end the current placement record to stop funding and add a new placement with address of unknown as the first address line and placement record’s local authority to England, Scotland, Northern Ireland or Outside the UK to restrict access.</p>
+            <p><b>Note:</b> The Contact Centre will still have access to these records.</p>
+            <h3>Data Champion role and responsibilities</h3>
+            <p>Data Champions play a key role in ensuring the Data Platform is being actively and effectively used within their organisations. Due to the sensitive nature of the data held on the platform, Champions will also act as gatekeepers within their organisation, ensuring access is only provided to those that need it.</p>
+            <p>Data Champions will have the same access to the platform as other local users but will have a deeper understanding of the system, enabling them to provide advice to colleagues.</p>
+            <p>Data Champion responsibilities include:</p>
+            <ul>
+                <li>Determining who requires access to the Data Platform within their organisation and submitting requests as required.</li>
+                <li>Nominating and validating requests for new local Champions, using the template provided below.</li>
+                <li>Championing the use and best practice of the Ukraine Data Platform.</li>
+                <li>Providing training and guidance to new users within their organisation.</li>
+                <li>Act as contact point between users within their organisation and the <a href="mailto:NationOfSanctuarySurvey@gov.wales">Nation of Sanctuary Mailbox</a>.</li>
+                <li>Attend drop-in sessions to exchange information on the Data Platform’s current releases.</li>
+                <li>Feedback suggestions for improvements and changes in Data Platform functionality.</li>
+            </ul>
+            <h4>Nominating a new Data Champion</h4>
+            <p>When sending the Data Platform team your nomination for a new local Data Champion, please use the following form of words in your email:</p>
+            <q>I can confirm that I have trained [new Champion’s full name] on how to use the Data Platform and that they have access to the User Guide to support their on-going use of the system. Please register them as a Data Champion for [name of organisation].</q>
+            <h3>Looking to the future</h3>
+            <p>There is currently a backlog of themes that could be developed for the Platform. We will shortly be asking Champions and policy colleagues to help us prioritise those. We can then analyse and cost the proposed themes to be taken forward for development.</p>
+            <p>Watch your inbox for an invitation to get involved in our prioritisation activities.</p>
+            <p>In the short term, we are working on the feasibility of delivering three themes from September onwards, namely:</p>
+            <ul>
+                <li>the ability to report to UK Government</li>
+                <li>onboarding of Local Health Boards</li>
+                <li>stopping the Objective Connect feeds</li>
+            </ul>
+            <p>More information on these themes will follow in due course.</p>
+            <p>In the meantime, we will continue to ensure that any bugs encountered are fixed, and where possible introduce minor changes and improvements to the system in response to some of the suggestions we have received from users.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="release-note-1" class="y-target">
+            <h2>Release notes</h2>
+            <p class="published-author">Published on 10 August 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>We are continuing to develop the live Ukraine Data Platform MVP based on your feedback, to improve user experience and functionality.</p>
+            <p>We are due to make several ‘hot fixes’ to the system between 06:00 and 08:00 on Wednesday 10 August. During this period, the system will be unavailable.</p>
+            <p>This week’s update includes the following:</p>
+            <ul>
+                <li>New - "Complex Case Flag" added to applicant record. This flag is to be used when there are applicant complexities that need careful/sensitive consideration. Once set every time someone accesses that applicant record a popup will appear indicating that this is a complex case and to refer to the case notes.</li>
+                <li>New user set-up feature - allow users to access more than one Local Authorities data. Please note this will only be used where both Local Authority data champions agree that this can be done due to data sharing implications. </li>
+                <li>New - For contact centre only – ability to bulk set the allocated officer to blank, so that new officers can be allocated the following morning.</li>
+                <li>Changes to the Housing Needs screen:</li>
+                <ul>
+                    <li>Label renamed "Access Accommodation" flag to "Wheelchair or accessible property needed?"</li>
+                    <li>Property accessibility requirements - move under and link to the flag above.</li>
+                    <li>Label renamed "Pets?" to "Has Pets?"</li>
+                    <li>Household ID link to allow one-click to household details screen.</li>
+                </ul>
+                <li>Change - Default Housing View changed to allow filter/match in column order:</li>
+                <ul>
+                    <li>Housing Need ID</li>
+                    <li>Lead Applicant Name</li>
+                    <li>Lead Applicant Status – to allow filtering on “ready for move on”</li>
+                    <li>Household ID</li>
+                    <li>Beds</li>
+                    <li>Bedrooms</li>
+                    <li>Wheelchair / Accessible Need</li>
+                    <li>Has Pets</li>
+                </ul>
+                <li>Fix - Sort applicant status reason alphabetically</li>
+                <li>Fix - When a new member is allocated to the household which is already allocated to a welcome centre, the new household member does not inherit the welcome centre. This is now fixed.</li>
+                <li>Fix - When the last household member is joined with another household it leaves orphaned household and housing need records. These records will be deactivated.</li>
+                <li>Fix - Where expected user of the system is displayed as “HFU Prod SA” in the case notes. This is now fixed.</li>
+                <li>Fix - When household is allocated to welcome centre the audit record both for the household and the applicant is displayed as "HFU Prod SA" not the individual that made the change.</li>
+                <li>Fix - one-time data update – update the host address on applications without applicant.</li>
+                <li>Fix - one-time data update - deactivate households without members</li>
+            </ul>
+            <p>Your feedback on existing and new features is very important to us, so please continue to submit any issues and suggestions to us via <a href="NationOfSanctuarySurvey@gov.wales">NationOfSanctuarySurvey@gov.wales</a></p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-4" class="y-target">
+            <h2>Data Platform Newsletter - Issue 4</h2>
+            <p class="published-author">Published on 29 July 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>In this issue we update you on the current rollout, and touch upon our plans for improving the Platform post-MVP and adding to our supporting guidance. We also share the latest visa and arrivals statistics from UK Government and recap our Information Governance arrangements.</p>
+            <p>Our newsletters are circulated to the Homes for Ukraine Contact Centre, Welcome Centres, Local Authorities and Health Boards in Wales.</p>
+            <p>If you would like to add any of your colleagues to our mailing list, please <a href="mailto:NationOfSanctuarySurvey@gov.wales">contact us</a>.</p>
+            <h3>Rollout update</h3>
+            <p>The Ukraine Data Platform MVP was launched in three phases, commencing 18 July. First to the Contact Centre, then to Welcome Centres, before being released to all remaining Local Authorities.</p>
+            <p>UK data feeds are being applied to the platform as we receive them.</p>
+            <p>The Platform is currently operating as we expected, and issues at this stage are minimal. The main area of concern raised is user access, which we are dealing with as quickly as possible.</p>
+            <p>If you think you should already have an account on the live system, please follow the instructions under ‘Accessing the live system’ on page 10 of the <a href="https://docs.google.com/document/d/1uxeZJ00RrfxDTBaj9mGiYg-WLZQl72mh/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">Data Platform User Guide</a> before requesting a new account via your local Data Champion.</p>
+            <p>All new user access requests should be submitted by your local Champion and not by individual users. The process, outlined in Annex 2 of the <a href="https://docs.google.com/document/d/1uxeZJ00RrfxDTBaj9mGiYg-WLZQl72mh/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">Data Platform User Guide</a>, ensures that users are given the correct access permissions according to their need.</p>
+            <p>Data Champions: please submit all user access requests to: <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
+            <p>We are currently determining how the Platform will be used by Local Health Boards (LHB) and Public Health Wales colleagues.  In order to finalise the rollout process for these user groups, we need to establish a Data Champion and receive a list of local users for each LHB. Please email your nominated Data Champions and local user lists to us at: <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
+            <h3>Further development work</h3>
+            <p>Over the next few weeks, we will review the additional user requirements for the Platform. We will assess the development costs for each and prepare a development roadmap outlining our plans for delivering the next set of improvements. </p>
+            <p>We are keen to hear from local Data Champions about ways we could improve the Platform and make processes easier for all users. If you have any suggestions for our consideration, please let us know via <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
+            <h3>Training for users</h3>
+            <p>We have delivered three ‘train the trainer sessions’ and distributed the updated User Guide, training slides and script.</p>
+            <p>Feedback has been positive, so we hope you are continuing to find them helpful as you and your colleagues begin to navigate the data platform.</p>
+            <p>We are now developing the outstanding content for the User Guide Annexes and will begin to record the bite size videos to support new users coming onto the system.</p>
+            <p>The recording of the training session that we delivered on 14 July is now available and you can access it here: <a href="https://www.youtube.com/watch?v=euvWpjoX6rs">Ukraine Data Platform - Super User Training Session</a></p>
+            <p>We have been reviewing the questions that arose during our training and drop-in support sessions, and we will be updating our <a href="https://ukrainedataplatform.github.io/FAQ/">Data Platform FAQ</a> with answers to these shortly.</p>
+            <h3>Data update</h3>
+            <h4>Sponsorship scheme statistics</h4>
+            <p>The UK Government regularly publishes statistics about people coming to the UK from Ukraine through its various sponsorship routes.</p>
+            <p>Statistical releases include information on total visa applications, visas issued, and numbers of people arriving / extending their stay in the UK: <a href="https://www.gov.uk/government/publications/ukraine-family-scheme-application-data/ukraine-family-scheme-and-ukraine-sponsorship-scheme-homes-for-ukraine-visa-data--2">Ukraine sponsorship schemes visa data</a></p>
+            <p>Information is also made available, broken down by:</p>
+            <ul>
+                <li><a href="https://www.gov.uk/guidance/ukraine-sponsorship-scheme-visa-data-by-country-upper-and-lower-tier-local-authority">UK country, including Local Authorities</a></li>
+                <li><a href="https://www.gov.uk/government/publications/homes-for-ukraine-sponsorship-scheme-and-ukraine-family-scheme-visa-data-by-age-and-sex-of-applicant">age and sex of applicant, per UK country</a></li>
+            </ul>
+            <h4>Data sharing documentation</h4>
+            <p>We continue to work on developing Information Governance documentation to support the Data Platform and the wider data sharing requirements, including: </p>
+            <ul>
+                <li>Data Protection Impact Assessment</li>
+                <li>Privacy Notices</li>
+                <li>Information Sharing Protocol (ISP)</li>
+            </ul>
+            <p>A small working group convened on 21 July to develop the ISP.  The group will meet again in the next fortnight to review progress. We will update you on all data sharing documentation in a subsequent newsletter.</p>
+            <p>In the meantime, if you need to share data with external partners in order to provide support to people from Ukraine or local sponsors (either as controllers or processors), this is covered under Section 8 of your existing Data Disclosure Agreements.</p>
+            <p>Volunteers to assist with the ongoing development of the ISP are still very welcome. If you would like to get involved, please email <a href="mailto:data@gov.wales">data@gov.wales</a></p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="live-rollout" class="y-target">
+            <h2>Live Rollout Update</h2>
+            <p class="published-author">Published on 21 July 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>This week marks the initial rollout of the Ukraine Data Platform. Individuals who have access to the system will be able to see their live data from this morning, Thursday 21 July. </p>
+            <p>The Platform provides secure access to an up to date, single source of data for those of us who are supporting and monitoring the large number of people coming to Wales from Ukraine. </p>
+            <p>The live system can be accessed via this URL: <a href="https://homesforukrainedataplatform.crm11.dynamics.com/"><b>https://homesforukrainedataplatform.crm11.dynamics.com/</b></a></p>
+            <p>To register for access to the live system, contact your local Data Champion (see attached list). Once your account has been created, they will confirm your log in details.</p>
+            <h3>Data Platform Minimum Viable Product (MVP)</h3>
+            <p>Releasing our MVP is an important first step in getting a working system with live data into the hands of the people who will use it.</p>
+            <p>The MVP will enable you to:</p>
+            <ul>
+                <li>check and validate the uploaded data for your area, ensuring the data you hold in your local systems match the records in the data platform and pre-existing allocations to welcome centres/hotels are accurate. </li>
+                <li>We have been training local Data Champions who can provide you with training on the system and will be your first point of contact for queries regarding the Platform.</li>
+            </ul>
+            <h3>Future development work</h3>
+            <p>We will work with Local Authorities to develop wider business usage and to support reporting back to UK government over the next few weeks. </p>
+            <p>We also aim to realise the business benefits of improved real-time access to data records for expected arrivals to Welcome Centres and hotel accommodation soon. </p>
+            <p>The data platform will be updated in line with updates provided via Objective Connect: Daily updates Tuesday to Saturday for individual sponsorship data with Welcome Centre / Hotel Allocations showing as the Contact Centre make them. </p>
+            <h3>Fixing known issues</h3>
+            <p>Currently, there is a technical issue preventing linking newly approved applicants under the individual sponsorship scheme to their sponsors. We are working on a fix for this, so you may experience a delay in that data appearing in the live system. </p>
+            <p>Rest assured that data sharing via existing Objective Connect workspaces will continue in parallel, with the aim of completely transitioning over to the Data Platform as soon as possible. We will give you a better idea of the timeline for this in due course.</p>
+            <h3>Drop in support sessions</h3>
+            <p>The development team are hosting drop-in calls for new users to join between 10:30 and 11:30 on Thursday and Friday this week, and Monday to Friday during the week commencing 25 July.</p>
+            <p>These sessions are intended for you to tell the team about any issues you have encountered and receive “live” support as you begin to use the system.</p>
+            <p>Invitations to the drop-in calls have been sent out to all local data platform champions (see attached list), so please ask yours if you want to attend a particular session.</p>
+            <p>We have also published a <a href="https://ukrainedataplatform.github.io/FAQ/">Data Platform FAQ</a> Data Platform FAQ, which helps to answer some of the common questions that have emerged during user training and testing.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="release-newsletter-1" class="y-target">
+            <h2>Data Platform MVP Release Newsletter</h2>
+            <p class="published-author">Published on 14 July 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>We are about to reach an important development milestone with the imminent rollout of the Ukraine Data Platform minimum viable product. We’d like to thank everyone who has been involved in developing and testing the service to this point. The immediate business benefits we hope to achieve by doing this are:</p>
+            <ul>
+                <li>enabling the Contact Centre’s transition across to the Data Platform</li>
+                <li>providing local authorities with real-time access to arrivals and expected arrivals at Welcome Centres and hotels </li>
+            </ul>
+            <p>We will begin to realise the wider business benefits by expanding the use of the Data Platform over the next few weeks.</p>
+            <p>It is important to understand that this is the start of a phased data migration journey, moving from shared Objective Connect workspaces to a single, joined-up, Data Platform.</p>
+            <p>The transition will take time and we will work with you all to help and assist you throughout.</p>
+            <p>The existing Objective Connect feeds will be kept live during this short transitionary period.</p>
+            <h3>Rollout plan</h3>
+            <p>The Data Platform is expected to be rolled out to users on an incremental basis as follows:</p>
+            <ul>
+                <li>Monday 18 July: Contact Centre (validating data)</li>
+                <li>Tuesday 19 July: Contact Centre (adding users into the system)</li>
+                <li>Wednesday 20 July: One Local Authority (to be confirmed) with a Welcome Centre </li>
+                <li>Thursday 21 July: All remaining Local Authorities</li>
+            </ul>
+            <p>The Data Platform will become useful to Local Health Boards once all data sets are validated and confirmed correct, therefore rollout to this group will be carried out during the next phase, following the delivery of targeted training and creation of user accounts.</p>
+            <p>We are asking all users to validate the data from their areas and advise of any issues with their historic data. If you encounter any issues with your historic data, please <a href="mailto:NationOfSanctuarySurvey@gov.wales">contact us</a>.</p>
+            <h3>Drop-in sessions</h3>
+            <p>In order to provide support during the rollout and triage any issues that arise with the live system, we will be running a series of drop-in sessions to coincide with the phased rollout.</p>
+            <p>Drop-in sessions will run on the following days:</p>
+            <ul>
+                <li>Tuesday 19 July, 10:30 – 11:30: for Contact Centre users</li>
+                <li>Wednesday 20 July, 10:30 – 11:30: for the initial Local Authority with a welcome centre (once confirmed)</li>
+                <li>Thursday 21 July, 10:30 – 11:30: for all other Local Authorities</li>
+            </ul>
+            <p>Invitations and joining instructions will be sent out to local Data Champions. Please feel free to forward these on to local users within your organisation as necessary.</p>
+            <h3>Support model</h3>
+            <p>A support model for the Data Platform has been developed and agreed with colleagues from Digital Health and Care Wales. (DHCW). This has been sent out to Heads of IT over the past couple of weeks.</p>
+            <p>This document sets out the service model to be adopted by all local authorities and health boards when seeking assistance on the system to ensure DHCW can provide a timely response to queries.</p>
+            <p>User incidents will be triaged locally by your organisation’s service desk in the first instance. Issues that cannot be solved locally can then be escalated to the Data Platform Service Desk, provided by DHCW. </p>
+            <p>User incidents will be triaged locally by your organisation’s service desk in the first instance. </p>
+            <p>DHCW will be providing the national service desk for the platform, but support will be provided by Welsh Government, Microsoft and DHCW Infrastructure team.</p>
+            <h3>GDPR summary note</h3>
+            <p>Data colleagues are working with several Local Authorities to develop a full Information Security Protocol. While that is in production, we have drafted and agreed a set of <a href="https://docs.google.com/document/d/1x6NLWtOS91sMqKWjKPbs_Q3qXpIsOTQ7/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">interim information governance arrangements</a> for the Data Platform.</p>
+            <p>The interim arrangements cover the following:</p>
+            <ul>
+                <li>Purpose for processing and lawful basis</li>
+                <li>Data protection roles and responsibilities</li>
+                <li>Transfer of data to third parties</li>
+                <li>Data breach procedures
+                </li>
+            </ul>
+            <h3>Technical Briefing</h3>
+            <p>A short briefing note on the technical and security elements of the Data Platform has been compiled and is available on request. It will be emailed to Data Champions and Heads of IT.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-3" class="y-target">
+            <h2>Data Platform Newsletter - Issue 3</h2>
+            <p class="published-author">Published on 13 July 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>This week we bring you the latest news on our preparations for rolling out the Data Platform MVP, along with updates on user training and data matters.</p>
+            <p>Our newsletter is circulated to the Homes for Ukraine Contact Centre, Welcome Centres, Local Authorities and Health Boards in Wales.</p>
+            <p>If you would like to add any of your colleagues to our mailing list, please <a href="mailto:NationOfSanctuarySurvey@gov.wales">contact us</a>.</p>
+            <h3>Development highlights</h3>
+            <ul>
+                <li>‘Train the trainer’ sessions have been delivered to Champions / Super Users, with training materials shared for local training / demo sessions.</li>
+                <li>The development team have responded to last-minute changes regarding most checks required on the platform. The remaining checks will be added post launch, once processes have been agreed.</li>
+                <li>The service model for the platform has been agreed with Digital Health and Care Wales and communicated to the local heads of IT and data champions.</li>
+                <li>We have successfully bulk loaded data into the system, and we are now repeating this process to ensure it works consistently. The process for loading just the changes to data is also being tested.</li>
+                <li>We also created a way to move applicants at a "household" level, which should save time.</li>
+            </ul>
+            <h3>Platform rollout</h3>
+            <p>Most Welsh Local Authorities and Health Boards have provided a list of individuals who will need access to the Data Platform and identified local Champions to act as super users. We are still waiting to hear from a few Local Authorities and Health Boards, and we need that information urgently to get users set up and ready to go.</p>
+            <p>If you have not yet submitted your list of individuals who need access, please email them to <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
+            <p>The Data Platform Minimum Viable Product (MVP) is being readied for a phased rollout in the week commencing 18 July.</p>
+            <p>Before roll-out, we suggest that users needing access to the Platform contact their local Data Champion to make sure that access has been requested.</p>
+            <p>Users who have been granted  access  should check they can access the Platform  by logging into the  these URLs:</p>
+            <ul>
+                <li><b>Dev:</b> https://org0a5cc0b1.crm11.dynamics.com/ </li>
+                <li><b>Prod:</b> https://homesforukrainedataplatform.crm11.dynamics.com/ </li>
+            </ul>
+            <p><b>Please Note:</b> Do not change any data in ‘Prod’ until we have informed you that roll-out has completed.</p>
+            <h3>Training for users</h3>
+            <p>Our two ‘train the trainer’ sessions were well attended and facilitated a lot of useful discussion about the Data Platform’s scope and operation.</p>
+            <p>We have shared the following resources with participants, to help them deliver training sessions locally:</p>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/1i7c_A29QPvorthyP1uOrBIwCiuH-Hb4c/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">Training script</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1ePj5bU4aEr6-lq6GB7l3-ZSAyX5yCDrs/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">Training slide deck</a></li>
+                <li><a href="https://docs.google.com/document/d/1uxeZJ00RrfxDTBaj9mGiYg-WLZQl72mh/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">User guide</a></li>
+            </ul>
+            <p>The user guide and any supplementary training materials will be updated as the Data Platform develops.</p>
+            <p>We have one remaining ‘train the trainer’ session which will take place on <b>14 July</b> at <b>10:45</b>. If you would like to attend this session, please email <a href="mailto:sarah.lilley@gov.wales">sarah.lilley@gov.wales</a></p>
+            <h3>Data update</h3>
+            <h4>Accommodation EoI data</h4>
+            <p>On Friday 01 July ‘AccommodationEOI’ files were uploaded to local authority workspaces, providing information on new offers of accommodation. If there was no file added to your workspace, this is because there were no offers for your area. </p>
+            <p>Going forward, all local authorities will be issued files on a fortnightly basis, however if there have been no offers for your area the files will be empty.</p>
+            <h4>Data sharing documentation – volunteers required</h4>
+            <p>We are still looking for volunteers to help prepare the new Information Sharing Protocol (ISP). Ideally, we'd like a few more LA and LHB representatives to ensure the ISP is as comprehensive as possible. </p>
+            <p>We are aiming to arrange a discussion with those involved during the week commencing 18 July, so if you're able to assist us, please email <a href="mailto:data@gov.wales">data@gov.wales</a></p>
+            <h4>Review of Objective Connect workspaces</h4>
+            <p>We are currently reviewing access to the Objective Connect workspaces that are used to share personal data. As part of this work, we will shortly be contacting workspace participants to check whether they still require access and, where this is no longer the case, remove their access.</p>
+            <p>In the meantime, if you currently have access to a workspace that you no longer need, please notify us by emailing <a href="mailto:data@gov.wales">data@gov.wales</a></p>
+            <p>We address several common information security and data protection questions in our FAQ section (see below).</p>
+            <h3>Frequently Asked Questions</h3>
+            <p>We continue to receive questions from our various stakeholders and public sector colleagues about how the Data Platform will work, the kinds of data it will hold, the checks that can be recorded and how it will evolve over time.</p>
+            <p>Where we have useful answers for these, we have added them to the <a href="https://docs.google.com/document/d/1cGLQe1EfOb-QdVPmw17P1AGfHJ4I2gL6/edit?usp=sharing&ouid=112052873182991728520&rtpof=true&sd=true">Homes for Ukraine Data Platform - FAQ</a>.</p>
+            <p>We will endeavor to keep this resource up to date with the latest information available and add to it as further questions emerge.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-2" class="y-target">
+            <h2>Data Platform Newsletter - Issue 2</h2>
+            <p class="published-author">Published on 28 June 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>In this week’s issue we are pleased to update you on how we will begin training users and testing the platform with a range of users. We also share outcomes from our meeting with Data Protection Officers. </p>
+            <p>We circulate our newsletter to the Homes for Ukraine Contact Centre, Welcome Centres, Local Authorities and Health Boards in Wales.</p>
+            <p>If you would like to add any of your colleagues to our mailing list, please <a href="mailto:NationOfSanctuarySurvey@gov.wales">contact us</a>.</p>
+            <h3>Data Platform rollout</h3>
+            <p>This week we are focusing on:</p>
+            <ul>
+                <li>setting up user accounts</li>
+                <li>loading real world data sets to the platform</li>
+                <li>delivering training to Champions and super users</li>
+                <li>running User Acceptance Testing</li>
+            </ul>
+            <p>Most Welsh Local Authorities and Health Boards have provided a list of individuals who will need access to the Data Platform and identified local Champions to act as super users. We are still waiting to hear from a few Local Authorities and Health Boards, and we need that information urgently to get users set up and ready to go.</p>
+            <p>If you have not yet submitted your list of individuals who need access, please email them to <a href="mailto:mark.patterson@gov.wales">mark.patterson@gov.wales</a>.</p>
+            <h3>Testing the Data Platform</h3>
+            <p>Our user testing phase began on Monday 27 June with a demonstration session for Champions and volunteer testers.</p>
+            <p>Users were given access to explore the Platform and familiarise themselves with the different interfaces on Tuesday.</p>
+            <p>On Wednesday, Champions and testers will run the defined User Acceptance Test scenarios, which we created in consultation with them.</p>
+            <p>We will gather and analyse feedback from this round of testing and use the insights provided to further develop and improve the system.</p>
+            <h3>Training for users</h3>
+            <p>Our two upcoming ‘train the trainer’ sessions are:</p>
+            <ul>
+                <li>Thursday 30 June, 10:30 – 12:00</li>
+                <li>Friday 01 July, 10:30 – 12:00 </li>
+            </ul>
+            <p>Our training approach will:</p>
+            <ul>
+                <li>build expertise within each organisation using the system</li>
+                <li>consider local policies and ways of working, which may vary across the breadth of organisations involved</li>
+            </ul>
+            <p>Training sessions will last no more than 90 minutes and broadly cover process and how to use the system. There will be an opportunity for questions at each session.</p>
+            <p>Participants will receive:</p>
+            <ul>
+                <li>a user guide, which can be shared with their colleagues during subsequent training sessions. The guide will contains more detail on process and will be shared with all participants. We can also provide the training script if helpful.</li>
+                <li>early access to our dev / test area so they can familiarise themselves with the interfaces and gain confidence using the system before it goes live.</li>
+            </ul>
+            <p>The user guide and any supplementary training materials will be updated as the Data Platform develops.</p>
+            <p>We also hope to publish short tutorial videos demonstrating how to use any new features once the system has gone live.</p>
+            <h3>Data Protection Officers Meeting</h3>
+            <p>We met with Data Protection Officers from Local Authorities and Health Boards on 24 June to discuss some Information Governance concerns around the Data Platform.</p>
+            <p>Several actions arose for our policy and data teams to take forward:</p>
+            <ul>
+                <li>Develop an Information Sharing Protocol to cover the transfers of data through the platform </li>
+                <li>Update Welsh Government’s privacy notice and arrange for Ukrainian translation prior to sharing with Local Authorities and NHS colleagues</li>
+                <li>Share details of the Data Platform’s IT Health Checks, security assessments and Data Protection Impact Assessment</li>
+                <li>Confirm lines of escalation and incident reporting in the event of data breaches before the Platform goes live</li>
+            </ul>
+            <h3>Data Update</h3>
+            <p>We are still awaiting confirmation from a small number of local authorities that are providing hotel accommodation, regarding which of their staff need access to the Welcome Centre / hotel data via Objective Connect.</p>
+            <p>We will be contacting the local authorities who have yet to respond to ensure they are able to access the data they require.</p>
+            <p>We are seeking volunteers to help in the preparation of the new Information Sharing Protocol. If you're able to assist us with this endeavour, please email <a href="mailto:data@gov.wales">data@gov.wales</a></p>
+            <p>We address several common information security and data protection questions in our FAQ section (see below).</p>
+            <h3>Frequently Asked Questions</h3>
+            <p>We continue to receive questions from our various stakeholders and public sector colleagues about how the Data Platform will work, the kinds of data it will hold, the checks that can be recorded and how it will evolve over time.</p>
+            <p>Where we have useful answers for these, we have added them to the <a href="https://docs.google.com/document/d/1nDtZmZzfZnIMUAWIO171PUzeLUsTwyqy/edit?usp=sharing&ouid=102525975215165363088&rtpof=true&sd=true">Homes for Ukraine Data Platform - FAQ</a>.</p>
+            <p>We will endeavor to keep this resource up to date with the latest information available and add to it as further questions emerge.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+        <article id="newsletter-1" class="y-target">
+            <h2>Data Platform Newsletter - Issue 1</h2>
+            <p class="published-author">Published on 17 June 2022 &nbsp | &nbsp Written by William Rees</p>
+            <p>Through this weekly newsletter we will provide you with updates on the development of the Ukraine Data Platform and answer some of your common questions around its implementation and general use. We will circulate each issue to the Homes for Ukraine Contact Centre, Welcome Centres and Local Authority teams in Wales.</p>
+            <p>We want to work collaboratively with you all as we develop the Data Platform, to ensure that it meets your needs and provides a joined-up way to monitor and support the people coming to Wales from Ukraine.</p>
+            <p>While the initial release may not provide all desired functions from day 1, we will be developing our Minimum Viable Product (MVP) based on your feedback, adding elements and features that reflect your ongoing requirements.</p>
+            <p>This agile, iterative way of working may be new to some people, but due to the need to act quickly when responding to this crisis, we would rather release a product that is usable for most people as early as we can, and then work with our users to shape and improve it over time.</p>
+            <h3>Development highlights</h3>
+            <ul>
+                <li>The Platform’s service model has been reviewed and signed off by Digital Health and Care Wales (DHCW). This is the instruction booklet that will ensure users can access a support process to raise and resolve issues once the system is live.</li>
+                <li>User accounts for the private beta and Contact Centre have been created.</li>
+                <li>The development team have begun talking to Welcome Centres and Local Authorities about changes and tweaks to the current system that may be required.</li>
+                <li>The development team commenced private beta on 09 June. This is the stage where we begin to gather feedback from real users of the system.</li>
+                <li>A range of dummy data has been added to the system for testing purposes and to aid in the development of training materials for users.</li>
+                <li>A Memorandum of Understanding, including a GDPR schedule, and Data Sharing Agreement have been signed by both Welsh Government and DHCW.</li>
+                <li>Privacy notices have been drawn up and published:</li>
+                    <ul>
+                        <li><a href="https://gov.wales/homes-ukraine-scheme-privacy-notice">Welsh Government | Ukraine Data Platform Privacy Notice</a></li>
+                        <li><a href="https://dhcw.nhs.wales/files/information-governance/digital-health-privacy-notice-for-ukraine-familys-data-collection/">DHCW | Ukraine Data Platform Privacy Notice</a></li>
+                    </ul>
+                <li>On 24 June we will be meeting with Local Authority and NHS information governance colleagues to discuss data protection considerations for the Platform.</li>
+            </ul>
+            <h3>Data Platform rollout</h3>
+            <p>The private beta will run for at least 2 weeks. We aim to commence a phased national rollout towards the end of June, depending on the extent of the changes identified during beta testing.</p>
+            <p>17 local authorities and 3 health boards have provided us with the details of individual users who will need access to the Platform. If you have not yet submitted a list of individuals from your team who need access, please email them to: <a href="mailto:mark.patterson@gov.wales">mark.patterson@gov.wales</a> as soon as possible.</p>
+            <h3>Testing the Data Platform</h3>
+            <p>The Data Platform has undergone and successfully passed its IT Health Check.</p>
+            <p>The team have carried out an extensive range of functional tests on the Platform, without any significant faults or issues raised.</p>
+            <p>We have appointed a dedicated Test Manager to develop and test a range of scenarios, to ensure the system processes that have been designed for the MVP are fit for purpose and meet initial user needs.</p>
+            <p>Once we are ready to begin testing the beta phase system with users, we will reach out to nominated individuals who have received training on the Platform to help us.</p>
+            <h3>Training for users</h3>
+            <p>Welsh Government’s digital trainers are hard at work developing a suite of training materials to help you and your colleagues become familiar with the Data Platform’s various functions and features.</p>
+            <p>Data Platform Champions are currently being identified across all Local Authority and Health Board areas, and will be trained as Platform ‘super users’, providing support and additional training to colleagues within their business areas.</p>
+            <h3>Local Authority Champions / First Points of Contact</h3>
+            <p>Support from Data Platform Champions within Local Authority and Health Board teams will be invaluable to ensuring the successful rollout and testing of the Data Platform within your respective areas.</p>
+            <p>Champions will will be involved in the following activities as part of their role:</p>
+            <ul>
+                <li>Coordinating and supplying details of local users to the project team so they can be set up on the system.</li>
+                <li>Attending workshops and regular briefing sessions on the development of the Platform</li>
+                <li>Being part of the first wave of users trained on the system, in order to deliver training to local users.</li>
+                <li>Provide a local point of contact for initial user queries and escalate issues to the Homes for Ukraine national service desk</li>
+                <li>Gathering feedback and enhancement suggestions, forwarding them to the Data Platform service manager for consideration.</li>
+            </ul>
+            <h3>Published statistics</h3>
+            <p>UK Government’s Department for Levelling Up, Housing and Communities (DLUHC) has published statistical data on the <a href="https://www.gov.uk/government/publications/ukraine-family-scheme-application-data/ukraine-family-scheme-and-ukraine-sponsorship-scheme-homes-for-ukraine-visa-data--2">number of visas granted for individuals coming to the UK</a> via the Ukraine Family and Sponsorship Schemes.</p>
+            <p>A further breakdown of <a href="https://www.gov.uk/guidance/ukraine-sponsorship-scheme-visa-data-by-country-upper-and-lower-tier-local-authority">visa data by country</a> has also been published.</p>
+            <h3>Data update</h3>
+            <h4>AUK2 - applications via new system</h4>
+            <p>Some applicants are now using the UK Immigration ID Check app known as ‘AUK2’ to complete the identity verification stage for their Ukraine Sponsorship Scheme (Homes for Ukraine) visa applications. The data team is processing this new flow of data and will incorporate it in data being shared with users.</p>
+            <p>The data relates to both individual and super sponsor scheme applications and is distinguishable by the Unique Application Numbers (UAN) starting with ‘3434’.</p>
+            <h4>Arrivals but no data received</h4>
+            <p>Where Ukrainian citizens arrive without appearing in the approved applications data this is often due to them applying for visas under multiple schemes (Individual, Super sponsor, Family). Whilst visas cannot be changed once issued, the data platform will enable users to re-assign citizens to a different scheme if necessary.</p>
+            <p>Further to this update, there are a growing number of data-related questions and answers in our FAQ section (see below).</p>
+            <h3>Frequently Asked Questions</h3>
+            <p>We are grateful for the significant number of questions that have emerged during our various engagement sessions and requirements gathering workshops at the outset of developing the Data Platform. We have answered these questions with the latest knowledge and information at our disposal and you can browse them here: <a href="https://docs.google.com/document/d/1nDtZmZzfZnIMUAWIO171PUzeLUsTwyqy/edit?usp=sharing&ouid=102525975215165363088&rtpof=true&sd=true">Wales, Nation of Sanctuary: Ukraine Data Platform FAQ</a>.</p>
+            <p>We will endeavor to keep these up to date and add to them as further questions emerge during user training and testing.</p>
+        </article>
+
+        <div class="article-divider"></div>
+
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>

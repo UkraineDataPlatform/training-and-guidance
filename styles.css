@@ -1,0 +1,340 @@
+* {
+    color: #333333;
+}
+
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    color: #333333;
+}
+
+.wg-logo {
+    margin-right: auto; /*separates logo to left side from other navbar elements*/
+    height: 35px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    grid-area: navbar;
+    z-index: 1;
+}
+
+nav {
+    background-color: #793375;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    min-width: 800px; /*Keeps nav bar from distorting when browser window narrows*/
+}
+
+nav a {
+    flex-direction: row-reverse;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Segoe UI Semibold;
+    padding: 14px 10px;
+}
+
+/* nav a.language-selector {
+    font-weight: 700;
+    background-color: #642961;
+    border-radius: 50px;
+    padding: 4px 14px 8px;
+    margin-right: 40px;
+    margin-top: 2px;
+} */
+
+header > nav > a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 305px 1fr;
+    grid-template-areas:
+    "navbar navbar"
+    "sidebar content";
+}
+
+.content {
+    padding: 22px;
+    height: 100%;
+}
+
+aside {
+    grid-area: sidebar;
+    border-right: 2px solid #d9d9d9;
+    width: 240px;
+    background-color: #efefef;
+    padding: 22px 30px 22px 22px;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside > div > a {
+    font-size: 18pt;
+    font-family: Segoe UI Semibold;
+    text-decoration: none;
+    color: #333333;
+}
+
+aside *:hover:not(a) {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    text-decoration-color: #793375;
+}
+
+aside > div {
+    padding-bottom: 15px;
+}
+
+.aside-margin-block { 
+    margin-bottom: 120px;
+}
+
+aside ul {
+    padding: 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+    font-size: 13pt;
+    list-style: none;
+    text-decoration: none;
+}
+
+aside .chapter {
+    font-weight: 600;
+    color: #333;
+    font-size: 14pt;
+}
+
+aside .nest1 {
+    margin-left: 18px;
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+.content {
+    grid-area: content;
+    max-width: 870px;
+}
+
+.content h1 {
+    font-size: 32pt;
+    font-family: Segoe UI Semibold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #793375;
+    margin-bottom: 0;
+}
+
+.content h2 {
+    font-size: 26pt;
+    font-family: Segoe UI Semibold;
+    margin: 0 0 20px;
+}
+
+#escalation-table h2 {
+    margin-bottom: 30px;
+}
+
+.content h3,h4 {
+    margin: 25px 0 10px;
+}
+
+.content h3 {
+    font-size: 22pt;
+    font-family: Segoe UI Semibold;
+}
+
+.content h4 {
+    font-size: 18pt;
+    font-family: Segoe UI Semibold;
+}
+
+.content h5 {
+    font-size: 16pt;
+    font-family: Segoe UI Semibold;
+}
+
+.content p, li {
+    margin-bottom: 1rem;
+    font-size: 13pt;
+}
+
+.content a {
+    color: #2b61a9;
+    font-weight: bold;
+}
+
+.content img {
+    max-width: 100%; /* resize images proportionally with viewport */
+    height: auto; /* resize images proportionally with viewport */
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+p.published-author {
+    color: #793375;
+    margin: 15px 0 30px;
+    font-size: 12pt;
+}
+
+.article-divider {
+    height: 1px;
+    background-color: #793375;
+    margin: 50px 0 0;
+}
+
+section {
+    padding: 0;
+}
+
+.y-target {
+    padding-top: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12pt;
+}
+
+td p {
+    font-size: 12pt !important;
+}
+
+table ol {
+    margin: 0;
+    padding-left: 17px;
+}
+
+table li {
+    font-size: 12pt;
+    padding-left: 5px;
+}
+
+table img {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+}
+  
+th, td {
+    border: 1px solid #d9d9d9;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+th {
+    background-color: #793375;
+    color: #fff;
+    font-size: 12pt;
+}
+
+.video-container {
+    margin: 30px 0 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    z-index: 0;
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* custom text formatting */
+
+.nonbold > a {
+    font-weight: inherit; /* 'font-weight: inherit' fixes the issue of links appearing bold in headings */
+}
+
+/* Accordion styling */
+
+details ul {
+    margin-left: 18px;
+}
+
+details summary {
+    cursor: pointer;
+    color: #642961;
+}
+
+aside summary {
+    font-size: 18px;
+}
+
+summary {
+    margin: 20px 0 0;
+}
+
+/* Responsive 2 column section */
+
+.responsive-columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+
+.image-column {
+    flex: 0 1 auto;
+    margin-top: 15px;
+    min-width: 100px;
+}
+
+.text-column {
+    flex: 1 1 48%;
+    margin-top: 15px;
+}
+
+.image-column img {
+    max-width: 100%;
+    max-height: 85%;
+}
+
+span > img {
+    max-height: 35px;
+}
+
+/* spacer */
+
+.vspacer {
+    height: 20px;
+    max-width: 300px;
+    margin: 0;
+}
+
+.lower-alpha {
+    list-style-type: lower-alpha;
+}
