@@ -128,6 +128,7 @@
                     <li class="nest1"><a href="#handling-duplicate-records">Handling duplicate Applicant Records</a></li>
                     <li class="nest1"><a href="#rejected-sponsors">Rejected / Withdrawn Sponsors/Hosts </a></li>
                     <li class="nest1"><a href="#reinstate-host">To reinstate a withdrawn host</a></li>
+                    <li class="nest1"><a href="#fake-sponsors">Handling Fake Sponsors</a></li>
                     <li class="nest1"><a href="#duplicate-host-no-approved">Duplicate Hosts with no approved applicants attached</a></li>
                     <li class="nest1"><a href="#update-sponsor-comms">Updating Sponsor Communication Preferences</a></li>
                 </ul>
@@ -169,7 +170,7 @@
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
             <!---<p>An offline copy of the latest User Guide will be available to download by the 24/02/2023</p>-->
            <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v13-05-07-23.docx">Data Platform User Guide - Version 13 - Updated 05-07-2023</a> 
+            <a href="assets/documents/data-platform-user-guide-v14-27-09-23.docx">Data Platform User Guide - Version 14 - Updated 27-09-2023</a> 
             <div class="vspacer"></div>
         </section>
         <section>
@@ -292,6 +293,13 @@
                         <p>Menus – Placement menu; Household; Sponsor/host checks; Updating and Creating a Housing Need; Creating a Housing Need; Creating and Closing a Placement Record; Re-match within the individual LA boundary; Identifying a suitable Host; Handling No Shows; Cross Border Re- assignment across UK national borders (either scheme); Re-assignment across Local Authority boundaries but wholly within Wales; Linking a household record and a sponsor/host record; Adding a host address; Repatriation; Replacing and existing host/sponsor; Rejected/withdrawn host/sponsors. </p>
                         <p>Removed:</p>
                         <p>Deleting an Ophaned Household</p>
+                    </td>
+                </tr>
+                <tr><td>V14</td>
+                    <td>27/09/2023</td>
+                    <td>
+                        <p>Updated: Handling No Shows</p>
+                        <p>Added: Handling Fake Sponsors </p>
                     </td>
                 </tr>
             </table>
@@ -1988,12 +1996,14 @@
 
             <h3 id="remove-household-no-show" class="y-target">Removing a Host/Sponsor when the household is a No Show</h3>
             <p>There will be occasions where a household has decided either not to travel to Wales, has decided not to use this Visa or has travelled to another part of the UK on a separate Homes for Ukraine Visa.  There may also be a situation where the household/applicant are uncontactable with no confirmed arrival date. </p>
-            <p>On these occasions, there may be a host still linked to the household page, which is a result of a flow that was run in release 4.0.  As the host / host address field is mandatory and locked on the household page and you cannot create a placement tracking for someone who hasn’t arrived, it’s important that the IS Journey Status is reflective of the situation to enable the deletion of the data in these mandatory fields. </p>
-            <p>The system has functionality that when ALL members of a household group are set to No show / uncontactable it will remove the mandatory restrictions behind the host/ host address section of the household page.</p>
+            <p>On these occasions, there may be a host still linked to the household page, which is a result of a flow that was run in release 4.0.  As the host / host address field is mandatory and locked on the household page and you cannot create a placement tracking for someone who hasn’t arrived, it’s important that the IS/SS Journey Status is reflective of the situation to enable the deletion of the data in these mandatory fields. </p>
+            <p>The system has functionality that when ALL members of a household group are set to No show it will remove the mandatory restrictions behind the host/ host address section of the household page.</p>
             <p>When a household (multiple applicants or single applicants) are no shows, you should:</p>
             <ol>
-                <li>Set the IS Journey Status to one of 3 options: IS21, IS22, IS23.</li>
+                <li>For IS applicants, sSet the IS Journey Status to one of 23 options: IS21, IS22</li>
                 <img src="assets/images/is_journey23.png" alt="list of IS codes available (IS21, IS22 and IS23)" width="60%" height="60%">
+                <LI>For SS Applicants, set the SS Journey Status to one of 2 options: SS05D, SS05E</LI>
+                <img src="assets/images/ss_journey23.png" alt="list of IS codes available (IS21, IS22 and IS23)" width="60%" height="60%">
                 <li>Ensure that this is set for ALL members of the household.</li>
                 <li>The system will automatically remove the host details from the locked fields on the household page (after about 30-40 seconds) </li>
             </ol>
@@ -2050,7 +2060,16 @@
             </ol>
             <p>The UDP team with then reactivate the sponsor/ host record and the offered property record.  The offered property status will be changed to pending checks and it will be your responsibility to ensure that all sponsor/host checks are still relevant before making the property available within the <a href="user-guide.html#the-move-on-process">move on</a> search. </p>
 
-
+            <h3 id="fake-sponsors" class="y-target">Handling Fake Sponsors</h3>
+            <p>There may be occasions where you come across Sponsor records that are fictitious.  This may be the case where the property exists but everything else does not. The sponsor may also have several different information addresses, telephone numbers and email addresses.</p>
+            <p>If you establish a fake sponsor within the UDP you must take the below steps to ensure the record is dealt with correctly: </p>
+            <ol><li>Raise a ticket with JIRA– please include the below sentence when raising a ticket to avoid DLUHC push back:</li>
+                <p><b>“Wales we have a robust system in place to ensure that once checks are completed on a local level, the LA’s will individually raise a Jira ticket to flag as fake.”</b></p>
+            <li>Add a note to the Sponsor timeline explaining that the record is rejected due to being a ‘Fake Sponsor’ and include the JIRA ticket reference.</li>
+            <li>Update the Sponsor/ Host Journey Status to HST005 Rejected (this will make the record inactive)</li>
+            <li>Email the contact centre case management team at casemanagementteam@cardiff.gov.uk with all relevant information including any UANS’s for the applications and the suspected host’s name. </li></ol>
+            <p>The case management team will then mark the sponsor as unsuitable on Foundry, check for any duplicates and raise any additional concerns. Should there be any further requirements/ concerns, CMT will liaise directly with the relevant LAs. </p>
+            <p>Please note: It is not the LA’s responsibility to log these cases within foundry, please pass these onto the Case Management Team.</p>
             <h3 id="duplicate-host-no-approved" class="y-target">Duplicate Hosts with no approved applicants attached</h3>
             <p>From time to time you may come across an additional host record.  These will usually have no linked applicants or PTs attached.</p>
             <p>It will normally show an application linked with no applicant name which suggests that the applicant has not yet been approved.</p>
