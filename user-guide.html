@@ -77,6 +77,7 @@
                 <ul>
                     <li class="nest1"><a href="#contact-centre">LA / Contact Centre Responsibilities</a></li>
                     <li class="nest1"><a href="#offered-property-tab">Offered Property Tab</a></li> 
+                    <li class="nest1"><a href="#workaround-host-address">Workaround for no offered property generation</a></li>
                     <li class="nest1"><a href="#access-host-record-property-tab">Access Host Record from the Offered Properties Tab</a></li>
                     <li class="nest1"><a href="#searching-offered-property">Searching for an Offered Property</a>
                 </ul>
@@ -119,6 +120,7 @@
                     <li class="nest1"><a href="#adding-new-sponsor">Adding a new Sponsor / Host</a></li>
                     <li class="nest1"><a href="#adding-host-addresses">Adding Host Addresses</a></li>
                     <li class="nest1"><a href="#offered-property-tab">Offered Property Tab</a></li>
+                    <li class="nest1"><a href="#workaround-offered-property">Workaround for no offered property generation</a></li>
                     <li class="nest1"><a href="#searching-offered-property">Searching for an Offered Property</a>
                     <li class="nest1"><a href="#host-with-multiple-addresses">Hosts with multiple addresses</a></li>
                     <li class="nest1"><a href="#linking-household-record">Linking a household record and a Sponsor/host record</a></li>
@@ -168,9 +170,9 @@
         <h1>Data Platform User Guide</h1>
          <section>
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
-            <!---<p>An offline copy of the latest User Guide will be available to download by the 24/02/2023</p>-->
-           <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v14-27-09-23.docx">Data Platform User Guide - Version 14 - Updated 27-09-2023</a> 
+            <p>An offline copy of the latest User Guide will be available to download by the 03/11/2023</p>
+           <!---<p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
+            <a href="assets/documents/data-platform-user-guide-v14-27-09-23.docx">Data Platform User Guide - Version 14 - Updated 27-09-2023</a> -->
             <div class="vspacer"></div>
         </section>
         <section>
@@ -302,18 +304,24 @@
                         <p>Added: Handling Fake Sponsors </p>
                     </td>
                 </tr>
+                <tr><td>V15</td>
+                    <td>31/10/2023</td>
+                    <td>
+                        <p>Updated: The Homes for Ukraine Data Platform (HfU); Summary of roles; overview of the system windows, tabs and navigation; Individiual records; Household; Sponsor; Searching for a record outside of your local authority; Welcome Centre checks; initial ‘Check in’ checks; Second Checks; Bulk updates to checks; Using Case Notes; Updating the Case notes and activities check boxes; Updating the applicants check box; Updating / Creating a housing need; Creating a new housing need; Local Authority Responsibilities; Offered Property tab; move on search; reservation process; to view all reserved hosts and properties that reside in your LA; Creating a new placement record; updating and existing placement tracking; updating multiple records with the same journey status; adding an applicant to a household group; cross border re-assignment across UK national borders (either scheme); if the household record is not assigned to your local authority; Adding a new Sponsor/Host; Adding Host Addresses; Searching for an offered Property; Hosts with multiple addresses; Removing a host/sponsor when the household is a no show; Recording additional sponsor household members; Handling duplicate applicant records; Rejected/ withdrawn Sponsor/hosts; Handling Fake Sponsors; Duplicate Hosts with no approved applicants attached; how the process works- in summary; Individual Sponsor Scheme(Homes for Ukraine)</p>
+                        <p>Added: Workaround for host addresses that haven’t generated an offered property tab </p>
+                    </td>
+                </tr>
             </table>
         </section>
         <section>
             <h2 id="intro" class="y-target">Introduction</h2>
-            <p>Prior to the development of the Ukraine Data Platform, there was no single source of truth or way of viewing the full journey progress (via Super Sponsor or Individual Sponsor Schemes) of people from Ukraine seeking sanctuary in Wales. The Data Platform facilitates secure access to an up to date, single source of data to those providing support to Ukrainian citizens coming into Wales.</p>
-            <p>It will help provide an overview of all those entering Wales so that we can easily monitor and support individuals, as well as enable accurate reporting to Welsh Ministers and UK Government.</p>
-            <p>We believe this will bring about the following benefits:</p>
+            <p>The Data Platform facilitates secure access to an up to date, single source of data to those providing support to Ukrainian citizens coming into Wales as well as enablinge accurate reporting to Welsh Ministers and UK Government.</p>
+            <p>The platform provides the following benefits</p>
             <ul>
-                <li><b>Centralised and simplified data:</b> we can gather information on all Ukrainians coming into Wales, using a common set of journey status codes to ensure that we all have the right information at the right time to support them through their journey, and improve information available to staff involved in this work. </li>
+                <li><b>Centralised and simplified data:</b> we can gather information on all Ukrainians coming into Wales, using a common set of journey status codes to ensure that we all have the right information at the right time to support them through their journey. </li>
                 <li><b>Safe and secure:</b> information can be split down by LA, so an individuals’ data and case notes can be controlled by LAs and transferred if they move from one LA to another.</li>
                 <li><b>Cross-agency:</b> Each touchpoint to support those in need is recorded. This aids decision making and service/support allocation locally and at Health Board level.</li>
-                <li><b>Ease of Reporting:</b> the requirement to report to receive the appropriate funding streams will be much easier with less effort for Local Authorities as Welsh Government will be able to run reports at a national level instead.</li>
+                <li><b>Ease of Reporting:</b> Welsh Government are able to run reports at a national levelstraight out of the UDP.  </li>
             </ul>
             <p>This training guide will assist all users requiring access to the data platform, to be able to navigate the system and update information. As future iterations of the data platform are released, this guide will continue to be updated and shared. They will include individuals accessing the system from:</p>
             <ul>
@@ -324,7 +332,7 @@
                 <li>Local Health Boards in Wales</li>
             </ul>
             <h3 id="data-statement" class="y-target">Data Statement</h3>
-            <p>The Ukraine Data Platform has been developed by the Welsh Government to support the delivery of services to Ukrainian citizens and sponsors resident in Wales under the Welsh Government super-sponsorship, and Homes for Ukraine individual sponsorship schemes only. The data platform contains personal identifiable data. Data disclosure agreements are in place and are regularly reviewed.</p>
+            <p>The data platform contains personal identifiable data. Data disclosure agreements are in place and are regularly reviewed.</p>
             <p>The Welsh Government, local authorities and NHS health boards are all independent data controllers for the data they will access through the platform. Cardiff Council, in its role as the Contact Centre, operates as a Processor under the Welsh Government's instruction.</p>
             <p>By accessing the data platform, you are confirming that you have a valid business reason to access the data and that it will only be used for the agreed purposes.</p>
         </section>
@@ -342,13 +350,13 @@
             </ul>
             <p>In terms of the platform the Welsh Government are the product and service owners.</p>
             <h3>Local Authorities</h3>
-            <p>Numerous local authority services will be required by individuals and groups that have travelled from Ukraine, including housing provision (where an individual has arrived through the Super Sponsor Scheme) and facilitating conversations between hosts and those looking for accommodation and checks of accommodation (through Individual Sponsor Scheme). They also provide access to statutory services such as education and social services. The system will facilitate improved data sharing between approved organisations to ensure individuals receive the services and housing that meet their needs.</p>
+            <p>Numerous local authority services are required, including housing provision (where an individual has arrived through the Super Sponsor Scheme) and facilitating conversations between hosts and those looking for accommodation and checks of accommodation (through Individual Sponsor Scheme). They also provide access to statutory services such as education and social services. The system facilitates improved data sharing between approved organisations to ensure individuals receive the services and housing that meet their needs.</p>
             <h3>Contact Centres</h3>
-            <p>Operating from Cardiff Council, but providing a service to the whole of Wales, a team of 70+ staff are responsible for initiating travel of Ukrainians to Wales. They prepare households for their journey, capture individual needs, capture housing need, allocate them a space at a Welcome Centre, track them in transit and coordinate transport to welcome centres where they are supported by local authority staff. They have access to the data of all applicants until they arrive at the Welcome Centre.  The Contact Centre do not liaise or input data for anyone coming through the individual route.</p>
+            <p>Operating from Cardiff Council, but providing a service to the whole of Wales, the contact centre are responsible for ensuring that housing is provided for all individuals arriving on the Super Sponsor Scheme. . They prepare households for their journey, capture individual needs and housing needs, allocate them a space at a Welcome Centre or via direct allocation to a host and track them in transit to coordinate transport to their destination. .  The Contact Centre do not liaise or input data for anyone coming through the individual route. </p>
             <h3>Arrival Hubs</h3>
-            <p>Under the Super Sponsor scheme, Arrival Hubs liaise with the Contact Centre to ensure Ukrainians travelling to Welcome Centres are guided to their onward transport. In Wales, the arrival hubs are Holyhead and Pembroke Dock Ports, Cardiff Airport and Wrexham and Cardiff Central stations.</p>
+            <p>Arrival Hubs ensure Ukrainians travelling to Wales are guided to their onward transport. In Wales, the arrival hubs are Holyhead and Pembroke Dock Ports, Cardiff Airport and Wrexham and Cardiff Central stations.</p>
             <h3>Welcome Centres</h3>
-            <p>Operated mainly by local authorities with support from local providers (hoteliers/third sector organisations), these centres provide temporary accommodation to new arrivals through the Super Sponsor Scheme and connection with any support they require to access medical care, education and financial assistance. The Welcome Centres also coordinate the transfer of new arrivals when suitable permanent accommodation is found.  Welcome Centres do not house individuals that have arrived through the Individual Sponsor Route.</p>
+            <p>Operated mainly by local authorities with support from local providers (hoteliers/third sector organisations), these centres provide temporary accommodation to new arrivals through the Super Sponsor Scheme. The Welcome Centres also coordinate the transfer of new arrivals when suitable permanent accommodation is found.</p>
             <h3>Local Health Boards</h3>
             <p>Operating through Public Health Wales and the Local Authorities, the Local Health Boards provide medical support for those arriving from the Ukraine. In some cases, the NHS will be in contact with applicants and/or medical staff before the person arrives in the UK to ensure the right level of support and care is in-place for their arrival.</p>
         </section>
@@ -367,7 +375,7 @@
             <p><b>Please note:</b></p>
             <ul>
                 <li>The Welsh Government will only accept requests for new accounts that come via your Data Champion</li>
-                <li>Before setting up a new Data Champion / user, the Welsh Government will require confirmation from the requesting Data Champion that they have trained the new champion(s) and that they have full knowledge of how to use the platform and obtain support.</li>
+                <li>Before setting up a new Data Champion / user, the Welsh Government will require confirmation from the requesting Data Champion that they have trained the new users / champion(s) and that they have full knowledge of how to use the platform and obtain support.</li>
                 <li>You <b>will not</b> receive a username and password – please follow the instructions below to access the system for the first time.</li>
             </ul>
             <h3>Accessing the Live System for the first time</h3>
@@ -382,12 +390,12 @@
             <p><b>Important:</b></p>
             <p>Do not share your login details to the system or authenticate another user on their behalf.</p>
             <p>Do not use the live system to deliver any training. Training should be done in the Test System (<a href="https://org616cc293.crm11.dynamics.com/">https://org616cc293.crm11.dynamics.com/</a>)</p>
-            <p>To help differentiate between the Live (Prod) and Dev systems, the banners are different colours.</p>
+            <p>To help differentiate between the Live and test systems, the banners are different colours.</p>
             <p>Live Platform: Purple</p>
             <p>Test platform: Orange</p>
             <h3>Using Multi Factor Authentication (MFA)</h3>
             <p>Multi-factor authentication is a process in which users are prompted for an additional form of identification during sign-in. The additional form of identification is usually a code or biometric login through their mobile phone.</p>
-            <p>A second form of identification makes it harder for attackers to obtain or duplicate your log in details. It is therefore mandatory that MFA is used to access the platform.  You can use either a personal phone, work phone or tablet to authenticate your access to the data platform.</p>
+            <p>It is mandatory that MFA is used to access the platform.  You can use either a personal phone, work phone or tablet to authenticate your access to the data platform.</p>
             <p>You can do this in two ways:</p>
             <ol>
                 <li><b>Download the Microsoft Authenticator app.</b> The app plays no other role on your phone than helping you log into the platform when you require access. We have published detailed instructions on <a href="#app">how to use the Microsoft Authenticator app</a> to access the Homes for Ukraine data platform.</li>
@@ -404,8 +412,7 @@
                 <li>Local authority staff (including those that work in welcome centres) will only see data for those allocated to their local authority area. This applies to applicants of both the individual and super sponsor schemes</li>
                 <li>Anything blue and underlined indicates that it can be clicked to take you to another set of information</li>
                 <li>Where there is a red asterisk (*) next to a field, this is a mandatory field</li>
-                <li>You may see navigation arrows which enable you to go straight to the record of a linked individual</li>
-                <li>You can filter on a lot of information on the ‘Applicants’ screen</li>
+                <li>You can filter information on different views </li>
                 <li>You must save any changes to records before moving to a different screen</li>
             </ul>
             <h3 id="menus" class="y-target">Menus</h3>
@@ -531,8 +538,7 @@
                 <tr>
                     <td><b>Summary</b></td>
                     <td>
-                        <p>Provides an overview of the individual record.</p>
-                        <p>The Person Information section includes:</p>
+                        <p>Provides an overview of the individual record, which includes:</p>
                         <ul>
                             <li>whether this person is their household’s <b>lead applicant</b> (usually an adult or English speaker in the group for communication purposes)</li>
                             <li>the individual’s <b>relationship</b> to the lead applicant (if not lead applicant) </li>
@@ -547,7 +553,7 @@
                     <td><b>Personal Details</b></td>
                     <td>
                         <p>
-                            Gives a more in-depth record of the applicant’s <b>phone</b> and <b>email</b> details plus details of their <b>sponsor/host</b> (where applicable).
+                            Gives a more in-depth record of the applicant’s contact details plus details of their sponsor/host (where applicable). 
                         </p>
                     </td>
                 </tr>
@@ -555,7 +561,7 @@
                     <td><b>Case Notes and Activities</b></td>
                     <td>
                         <p>
-                            Summarises all <b>case notes</b> raised for an applicant. Case notes may include notes on travel information, checks outstanding at a welcome centre or notes on changes to the makeup of their household group.
+                            Summarises all <b>case notes</b> raised for an applicant. Case notes may include notes on travel information, checks outstanding or notes on changes to the makeup of their household group. 
                         </p>
                     </td>
                 </tr>
@@ -599,7 +605,7 @@
                     <td><b>General</b></td>
                     <td>
                         <p>
-                            This tab gives an overview of the household details, including a list of the <b>individuals within the household</b>. In this tab you can also make edits to the makeup of the household (<b>adding</b> or <b>removing household members</b> and </b>assigning lead applicant</b> status). You can also make a </b>household note</b>, for example, you can make a note if someone is in hospital but needs to be considered as being part of the household because they will join the family when they are released. 
+                            This tab gives an overview of the household details, including a list of the <b>individuals within the household</b>. In this tab you can also make edits to the makeup of the household (<b>adding</b> or <b>removing household members</b> and </b>assigning lead applicant</b> status). You can also make a </b>household note</b> for any information relating to the household group. 
                         </p>
                     </td>
                 </tr>
@@ -615,7 +621,7 @@
                     <td><b>Placement Tracking</b></td>
                     <td>
                         <p>
-                            This Tab provides a summary of the placement tracking records for the household which you can easily access and amend. You can also create new placement tracking records.
+                            This Tab provides a summary of the placement tracking records for the household. You can also create new placement tracking records depending on the placement type. 
                         </p>
                     </td>
                 </tr>
@@ -623,7 +629,7 @@
                     <td><b>Housing Needs</b></td>
                     <td>
                         <p>
-                            This tab provides details of the household set up and all the requirements and needs of each individual household member.  Details any pets arriving and any additional needs or adaptations required. 
+                            This tab provides details of the household set up and all the requirements and needs of each individual household member.  It also details any pets arriving and any additional needs or adaptations required. 
                         </p>
                     </td>
                 </tr>
@@ -631,7 +637,7 @@
                     <td><b>Move on Search</b></td>
                     <td>
                         <p>
-                            This section provides a table displaying all available offered properties both locally and across Wales and is used to create reservations between hosts and household as part of the move on process. 
+                            This section provides a table displaying all available offered properties both locally and across Wales and is used to create reservations between hosts and household as part of the <a href="#the-move-on-process">move on process. </a> 
                         </p>
                     </td>
                 </tr>
@@ -639,7 +645,7 @@
                     <td><b>Individual or Super Sponsor Applicant Checks</b></td>
                     <td>
                         <p>
-                            Shows the checks required depending on the sponsor route the applicant is travelling under.  For Super Sponsor these include medical screening and interim payment.  For individual Sponsor these include welfare visit and interim payment.
+                            Shows the checks required depending on the sponsor route the applicant is travelling under.  .
                         </p>
                     </td>
                 </tr>
@@ -683,7 +689,7 @@
                     <td><b>Placement Tracking</b></td>
                     <td>
                         <p>
-                            Will show placement tracking for individuals who will be housed with the Sponsor 
+                            Shows placement tracking for individuals who are or have previously been housed with the Sponsor.  
                         </p>
                     </td>
                 </tr>
@@ -750,7 +756,7 @@
             <h2 id="using-the-system" class="y-target">Using the system</h2>
             <h3 id="searching-record" class="y-target">Searching for a record within your local authority</h3>
             <ol>
-                <li>Click on Applicant Screen if searching for an individual, or Household section if you are searching for a FAM ID reference.</li>
+                <li>Click on Applicant Section if searching for an individual, or Household section if you are searching for a FAM ID reference.</li>
                 <li>Enter a search term into the search tool <span><img src="assets/images/search-this-view2.png" alt="Search this view field"></span> and press enter. For example, you may want to search for an applicant using their last name.</li>
                 <span><img src="assets/images/search-for-jones.png" alt="search for 'Jones'"></span>
                 <p></p>
@@ -774,15 +780,11 @@
             <p>The ‘out of area search’ function has been developed to enable you to find basic information about any record within the platform, regardless of which local authority the record is assigned to.</p>
             <p>To access the out of area search, you need to:</p>
             <ol>
-                <li>Open the Homes for Ukraine Data Platform using your normal log in details and authentication processes.</li>
                 <li>Click on <b>Search Applicants from other LA's</b> which is listed under People in the left-hand navigation bar.</li>
                 <img src="assets/images/search-applicants-left-hand.png" alt="screenshot of left hand navigation bar with Search Applicants highlighted">
-                <li>3)	Once the search screen has opened you will find two options in the left-hand navigation.</li>
-                <li>Once the search screen has opened you will find two options in the left-hand navigation:
-                    <ul>
-                        <li><b>Applicants:</b> carry out standard household and individual level searches as detailed in the user guide. These are limited to those in your defined area.</li>
-                        <li><b>Applicant Search:</b> Enables you to search by name to identify records which match the search criteria irrespective of which Local Authority ‘owns’ the record.</li>
-                    </ul>
+                <li>Once the search screen has opened you be able to search by entering the applicant details into the search box.</li>
+                
+                 
                 <img src="assets/images/applicants-search-screen.png" alt="">
                 </li>
                 <li>Type full or part of the person’s name in the search box using a minimum of 3 characters.  This search does not use wildcard characters and will return a maximum of 200 lines of data.</li>
@@ -790,54 +792,35 @@
             <p><b>Please note:</b> You are still unable to access records that sit outside of your local authority, but you can use the information provided to contact the owning local authority and discuss any appropriate action.  A list of Data Champions can be provided.</p>
 
             <h3 id="welcome-centre-checks" class="y-target">Welcome Centre Checks</h3>
-            <p>When a person or household group arrives at a Welcome Centre, there are several checks that need to take place before they are ready to be matched to suitable accommodation. These are grouped into three checklists:</p>
-            <ol>
-                <li>Initial Check in</li>
-                <li>2nd Stage checks (usually relatively close to the initial checking in)</li>
-                <li>3rd and Final check</li>
-            </ol>
-            <p>There are 2 places to update an individual’s record to show the checks that have taken place.</p>
-            <ol>
-                <li>Case Notes and Activities</li>
-                <li>Check Box</li>
-            </ol>
-            <p>Both are under the Summary tab within an individual's record.</p>
-            <p><b>Please note:</b></p>
-            <p>Once the checks are finalised, we will build these into the system, however this is the best way to update records in the interim.</p>
+            <p>When a person or household group arrives at a Welcome Centre / Initial Accomodation, there are several checks that need to take place before they are ready to be matched to suitable accommodation. These are grouped into separate  checklists. </p>
+            
+            <p>Any additional non sensitive notes that need to be recorded can be added to the Timeline on the summary page of the applicant record. </p>
+        
             <h4>Initial 'Check in' Check</h4>
-            <p>Ideally completed as soon as an individual reaches the contact centre or emergency accommodation the initial checks list focus on immediate health requirements and getting them settled. </p>
+            <p>Ideally completed as soon as an individual reaches the Welcome centre or emergency accommodation the initial checks list focus on immediate health requirements and getting them settled. </p>
             <p>Check list items are: </p>
             <ol>
                 <li>Meet any immediate needs (medical, essential supplies). If any medical needs, contact local healthcare team or 111 if further advice needed. </li>
                 <li>Offer Covid test (not compulsory but advised). If positive, alert healthcare worker. </li>
                 <li>Allocate room.  </li>
                 <li>Provide a Welcome Centre information pack and tour of facilities. </li>
+                <li>Book individual / family health appointment with health team</li>
+                <li>Refer for DWP support</li>
+                <li>Refer to casework team if immediate financial support is required</li>
+                <li>Offer new mobile SIM card if required</li>
             </ol>
-            <p>After this check you will need to <a href="#creating-placement-record">create a placement record</a> which will include the room allocated during this initial check.</p>
-            <h4>2nd Stage Checks</h4>
-            <p>During the 2nd you will need to create another case note or several case notes to cover the process of offering these aspects of health and financial support. Not all delivery partners will have access to the system, so consider how you will share information with them. <a href="#navigation">Using excel to export the data may be a useful option</a>.</p>
-            <ol start="5">
-                <li>Book individual/family health appointment with health team. </li>
-                <li>Refer for DWP support. </li>
-                <li>Refer to casework team if immediate financial support is required.  </li>
-                <li>Offer new mobile SIM card if required. </li>
-            </ol>
-            <p>To do so, follow the steps below to create a new case note. Again, you may want to copy the checklist (numbered 5 to 8) to indicate which checks have been carried out. </p>
-            <p><b>Please note:</b> if a new SIM card is provided, ensure the number is added to the “Preferred number” field within Person Information in the Summary tab.</p>
-            <h4>3rd and Final checks prior</h4>
-            <p>The following checks will need to be completed before an applicant can be considered for matching to available accommodation through the Super Sponsor Scheme. </p>
-            <ol start="9">
-                <li>Assistance offered to open a bank account.  </li>
-                <li>Offer ESOL language classes. </li>
-                <li>Arrange attendance at cultural briefing session.  </li>
-                <li>Adults: refer to Working Wales for employment/ training support. </li>
-                <li>Children: Arrange immediate education and early years provision. </li>
-                <li>Signpost to biometric data registration with Home Office.</li>
-                <li>Check accommodation needs haven’t changed.</li>
-            </ol>
-            <p><a href="#create-case-note">Create a case note</a> to record that these checks have been completed and change the checks box as appropriate.  </p>
-            <p>At this point you will also need to check that the accommodation needs of the household have not changed. </p>
-            <p>When these checks/services have been offered or provided, you can <a href="#change-journey-status">change the journey status</a> from SS07 – SS08 Welcome Centre Ready for Move On.  That will then enable local authorities to assess the housing need of individuals in the Welcome Centre who have had checks completed against available accommodation. </p>
+            
+            <p>After this check you will need to <a href="#creating-placement-record">create a placement record</a> for the new Welcome Centre Allocation.</p>
+            <p><b>Please note:</b>if a new SIM card is provided, ensure the number is added to the “Preferred number” field within Person Information in the Summary tab.</p>
+            <h4>Second Stage Checks</h4>
+            <p>Following on from initial checks,  you will need to complete and toggle the applicant checks in the platform and <a href="#create-case-note">Create a case note</a> to cover any non sensitive details relating to these checks. </p>
+            <p>System checks include:</p>           
+            <p>Super Sponsor</p>
+            <img src="assets/images/ssac.png" alt="Menu showing super sponsor applicant checks">
+            <p>Individual Sponsor</p>
+            <img src="assets/images/isac.png" alt="Menu showing individual sponsor applicant checks">
+            <p>To ensure these checks show as completed please follow the guidance for Updating the Applicant Checks Box</p>
+            <p>When these checks/services have been offered or provided, and the citizen is ready to move onto alternative accommodation you can <a href="#change-journey-status">change the journey status</a> from SS07 – SS08 Welcome Centre Ready for Move On.  That will then enable local authorities to assess the housing need of individuals in the Welcome Centre who have had checks completed against available accommodation. </p>
             <h3 id="sponsor-host-checks" class="y-target">Sponsor / host checks</h3>
                 <p>The sponsor or prospective Host (EOI) and their property should be checked prior to arrival, or very shortly after, a person or household are matched to them. The sponsor check box (shown below) can be used to track when a check has been carried out.  The two checks with padlocks will be provided the DLUHC data feeds and only apply to Sponsors, who have sponsored an application.</p>
                 <p>The checks should be toggled on the data platform once completed and include:</p>
@@ -855,7 +838,7 @@
                 <p><b>Housing Inspection Check - </b>to ensure the property is suitable and meets the correct criteria to host applicants.</p>
                 <p>This has been removed from the Sponsor/Host section and will now sit on each individual host address record.  The toggle will need completed for each individual property that the sponsor/host has offered once the checks have been confirmed successful.</p>
             <h3 id="bulk-updates-checks" class="y-target">Bulk updates to checks</h3>
-            <p>There is a table within each household record which lists the members of the household and which checks they have undergone in the Welcome Centre. When several members of a household group have each undergone the same checks (such as having a family health appointment booked or welfare visit completed), you can quickly update these checks in a single location to save time. </p>
+            <p>There is a table within each household record which lists the members of the household and which checks they have undergone in the Welcome Centre. When several members of a household group have each undergone the same checks (such as having a family health appointment booked or medical screening completed), you can quickly update these checks in a single location to save time.  </p>
             <p>You can also use this table to see which members of a merged household (a reunited family for example) have had checks and which individuals have not. </p>
             <p>To update all of the records at the same time:</p>
             <ol>
@@ -868,13 +851,13 @@
             <h3 id="using-case-notes" class="y-target">Using case notes</h3>
             <p>You will need to create a case note to record any checks which have been completed and add any additional information. To do this: </p>
             <ol>
-                <li>Change your system view and filter this view further if you prefer. You can read more about changing system views under the <a href="#system-views">System Views section</a> of this guide.</li>
+            
                 <li>Double-click on the name of the applicant whose record you wish to update. This will take you to the <a href="#applicant">individual Applicant screen</a>. </li>
                 <li>On the Summary tab, under Case Notes and Activities, you can add case notes. This should be done for each person arriving. </li>
                 <li>Click Enter a note: </li>
                 <img src="assets/images/enter-a-note.png" alt="enter a note button">
                 <li>
-                    <p>Add a title for your case note and add details in the main text box. In this case, you may want to simply copy the checklist above (numbered 1 to 4), to indicate that these are the checks that have been carried out.</p>
+                    <p>Add a title for your case note and add details in the main text box. In this case, you may want to simply copy the checklist above to indicate that these are the checks that have been carried out.</p>
                     <p>For ease of filtering and future reference please add the following in the title of the case note:</p>
                 </li>
                     <ul>
@@ -887,6 +870,7 @@
                 <li>To add your note, click the Add note button. </li>
                 <li>To discard your note, click the Cancel button. </li>
             </ol>
+            <p>Please note: If the case note is related to the household group, please ensure you add the case note on the household page.  Applicant case notes should refer to that individual applicant only.</p>
             <h4>Tips for adding information into the Case Notes and Activities</h4>
             <ul>
                 <li>Provide as much detail as possible BUT do not include any health/sensitive information.  For example, you could say a medical check has been booked/completed but not information about the outcome. </li>
@@ -910,10 +894,10 @@
             <h3 id="updating-case-notes" class="y-target">Updating the Case Notes and Activities Check Boxes</h3>
             
             <H4>No Non-essential Communications</H4>
-            <p>An applicant may make contact to state they don’t want to receive any communication, however it is necessary that essential communications are still carried out.  This means they should only receive information from Welsh Government regarding their current sponsor/hosting position.  Restricting their communication preferences to essential communication only means they will stop receiving updates regarding things such as Ukrainian National holiday updates/ information on local Ukrainian events etc.</p>
+            <p>An applicant may make contact to state they don’t want to receive any communication; however it is necessary that essential communications are still carried out.  This means they should only receive information from Welsh Government regarding their current sponsor/hosting position.  Restricting their communication preferences to essential communication only means they will stop receiving updates regarding things such as Ukrainian National holiday updates/ information on local Ukrainian events etc.</p>
             <p>To action this request in the UDP:</p>
             <ol>
-                <li>Go into the Applicant record, on the summary tab</li>
+                <li>Go into the Applicant record, and access the summary tab</li>
                 <li>Locate the No Non-essential Comunications check under Case Notes and Activities</li>
                 <li>Toggle this to YES</li>
                 <img src="assets/images/no-nonessential23.png" alt="Applicant menu with No Non-essential toggle highlighted">
@@ -924,7 +908,7 @@
             <p>There may be occasions when a minor (child under the age of 16) will travel to hosted/initial accommodation without the accompany of an adult.  There may also be occasions where Ukrainian parents repatriate and leave their child unaccompanied with the host/sponsor.  It is very important we capture these cases within the data platform to ensure we identify these individuals.</p>
             <p>To action this within the UDP:</p>
             <ol>
-                <li>Go into the Applicant record, on the summary tab</li>
+                <li>Go into the Applicant record, and access the summary tab</li>
                 <li>Locate the Unaccompanied Minor check under Case Notes and Activites</li>
                 <li>Toggle this to YES</li>
                 <img src="assets/images/unaccompanied-minor23.png" alt="Applicant menu showing unaccompanied minor selection highlighted">
@@ -952,7 +936,7 @@
             <p>To ensure reports can be accurately extracted by a range of organisations please ensure you update the checks box. The checkboxes are split into Super Sponsor Checks and Individual Sponsor Checks. </p>
             <p>Click the <span><img src="assets/images/yes-button.png" alt="yes button"></span> boxes to switch between yes and no. A blue box indicates the check has taken place. </p>
             <img src="assets/images/super-sponsor-checked-options.png" alt="Checks have taken place indication">
-            <p><b>Please note:</b> The checkboxes are continuing to be developed so they accurately record the range of checks required for individuals, determined by the scheme they are travelling under.  </p>
+          
             <h3 id="updating-housing-need" class="y-target">Updating / Creating a Housing Need</h3>
             <p>Housing needs will initially be created by: </p>
             <ul>
@@ -961,8 +945,8 @@
             </ul>
             <p>If a person joins or leaves a household ID group, you must:  </p>
             <ul>
-                <li>Update the linked housing need requirement for the existing household </li>
-                <li>Create a new linked housing need for the person that has been moved (if they are not joining another group). </li>
+                <li>Update the housing need requirement for the existing household </li>
+                <li>Create a new housing need for the person that has been moved (if they are not joining another group). </li>
             </ul>
             <p>Every Household ID, where the household is seeking new accommodation, should have a completed housing need tab which helps Local Authority colleagues when matching individuals to suitable accommodation, whether that be for individuals needing to be re-housed via the super sponsor scheme or for individuals who have arrived on the individual sponsor scheme.</p>
                 <h3 id="update-existing-housing" class="y-target">Updating an existing Housing Need </h3>
@@ -1030,7 +1014,7 @@
                     <li>When a person joins or leaves the household the Housing Need Tab is updated to reflect the new household set up.</li>
                     <li>The household timeline is updated with any important (but non sensitive) notes regarding the household. </li>
                     <li>When actioning the move on search the LA must do this from the household tab and should consider the household needs when filtering their search. </li>
-                    <li>When a property has been reserved the LA must liaise with the host address Local Authority (if this is different to their own)</li>
+                    <li>When a property has been reserved the LA must liaise with the host address Local Authority (if this is different to their own) in an efficient and timely manner.</li>
                     <li>When a property has been reserved, process the reservation through the stages, via the reservation status dropdowns, until the match is complete – regardless of whether the property is in your LA or not.</li>
                 </ul>
                 <p>For sponsors/hosts:</p>
@@ -1049,6 +1033,16 @@
                 <p>An offered property tab will appear automatically on any EOI data or when an additional address is added to a record. Existing sponsor records within the system that have an active hosting will still have an offered property tab but this will be empty and show ‘Source record not selected’: </p>
                 <img src="assets/images/moveon/offered-property2.png" alt="Screenshot of host address screen in the offered property tab with Source record not selected message">
                 <p>Once the current placement ends and the host address becomes available, the offered property status will revert to ‘Pending Checks’, and a blank offered property form will generate in the offered property tab.  It will be your responsibility to communicate with the host to enquire if they wish to host another family.  If they do, all previous checks should be confirmed to still be valid before making changing the offered property status to available.</p>
+                <h3 id="workaround-host-address" class="y-target">Workaround for host addresses that haven’t generated an offered property tab </h3>
+                <p>From time to time there may be other occasions where previous Sponsor data does not produce an offered property form, the tab shows as ‘source not selected’ and a work around is required to produce a new offered property tab. This will usually only be the case for historic data and on occasions where original applicants are no shows and therefore there has been no move on PTs created which would normally force the creation of an offered property.</p>
+                <p>In these instances, to generate an offered property tab you should:</p>
+                <ol>
+                    <li><a href="#adding-host-addresses">Create a new host address</a> on the host address tab, copying all the information from the original host address record.</li>
+                    <li>Assign the new host address to your local authority.</li>
+                    <li>This will generate an offered property tab with the status ‘new’.</li>
+                    <li>Contact the nationofsanctuarysurvey@gov.wales mailbox to explain you have created a new host address as part of the work around and require the old host address to be deleted. </li>
+                </ol>
+                <p>The UDP team will then remove the previous host address from the record so that you can continue to work with the record to ensure its ready to be made available.</p>
                 <p><b>Please note: </b>If the host no longer wishes to house any new applicants, then their records need to be set to withdrawn and this will automatically set the offered property tab to removed. </p>
                 <p>To view all offered properties in your area you will need to access the Offered Properties tab via the left have navigation:</p>
                 <img src="assets/images/moveon/offered-property-drop.png" alt="Screenshot of offered properties selected in navigation pane">
@@ -1088,7 +1082,7 @@
                 <img src="assets/images/moveon/la-property-view.png" alt="Screenshot of household move on search tab with LA view">
                 <p>The view can show records from all local authorities across Wales in one table but also enables users to filter a few LA’s at one time or narrow the search down to one LA at a time.  This will ensure that LA’s can tailor their initial findings based on area, which can either be across the whole of Wales or for a particular LA and its surrounding areas if required.</p>
                 <p><b>To search by the whole of Wales:</b></p>
-                <p>Select the Wales Wide drop down in the Available Properties table.  This will show all available properties across every local authority within Wales.  This view can be filtered to tailor the search to the household needs, including filtering to specific locations. </p>
+                <p>Select the Wales Wide drop down on the move on search tab in the Available Properties table.  This will show all available properties across every local authority within Wales.  This view can be filtered to tailor the search to the household needs, including filtering to specific locations. </p>
                 <img src="assets/images/moveon/wales-wide-view.png" alt="Screenshot of household move on search tab with Wales Wide view">
                 <p><b>To search by individual LA:</b></p>
                 <p>Select the ‘My LA Available Properties’ drop down in the Available Properties table.  This will show all available properties within your local authority only.  This view can be filtered to tailor the search to the household needs.</p>
@@ -1104,7 +1098,9 @@
                         <img src="assets/images/moveon/reserve.png" alt="Screenshot of reserve highlighted in record list">
                     <li>You will then need to click the reserve button. <ul><li>A pop-up window will confirm you wish to reserve the selected property - Click OK to reserve it.</li>
                     <li>You will see a ‘Reservation was created successfully’ message.</li></ul></li>
-                    <li>This will remove the record from the available offered properties view and change its status to RS00 – New Reservation. </li></ol>
+                    <li>This will remove the record from the available offered properties view and change its status to RS00 – New Reservation. </li>
+                <li>You can access the reservation from the general tab on the household page</li>
+            <img src="assets/images/reservation-general.png" alt="view of reservation in general tab"></ol>
                     <p>The reservation journey status will show on the record and will need to be updated as you move through the process.</p>
                     <img src="assets/images/moveon/reserve-status.png" alt="Screenshot of reservation menu with journey status highlighted">
                     <p>The reservation will move to the Reservations table which can be located on the left-hand navigation.</p>
@@ -1113,7 +1109,8 @@
                     <img src="assets/images/moveon/inactive-reservations.png" alt="Screenshot of inactive reservation view">
                     <p><b>Please Note:</b></p>
                     <p>If the reservation is within the same Local Authority then the user will have access to the household record, the host record and the reservation record.</p>
-                    <p>If the reservation is requested for a property in another Local Authority only the requesting LA will see the reservation.  Both LAs will need to communicate off the Data Platform to ensure that the reservation process is completed successfully. </p>
+                    <p>If the reservation is requested for a property in another Local Authority only the requesting LA will see the reservation.  Both LAs will need to communicate off the Data Platform to ensure that the reservation process is completed successfully. The requesting LA should email the LA in which they have reserved a property (where applicable) as soon as they reserve on the UDP.  This will make the receiving LA aware of which property has been reserved and by who and will also speed up the process to ensure the move happens quickly and efficiently.  </p>
+                    <p>A list of LA contacts who handle Move On is detailed on the <b>Move On Contacts Details</b> spreadsheet, within the <b>URD – Onward Accommodation</b> objective connect workspace.</p>
                     <h3 id="reservation-status" class="y-target">Reservation Status</h3>
                     <p>Each stage of the reservation process requires a reservation status update.  Certain reservation statuses will have influence over the automatic update of the offered property status.  </p>
                     <p>An example of this would be when ‘RS02 – Host/Applicant introduction successful’ is selected, the offered property status will change from ‘Reserved’ to ‘Matched’.</p>
@@ -1175,7 +1172,7 @@
         <p>To access the view:</p>
         <ol><li>Go to the offered properties tab (accessing via the left-hand Navigation)</li>
         <li>Select the view ‘My Offered Properties with an Active Reservation’ view </li></ol>
-        <p>This will enable you to track the offered properties that have been reserved and what their current offered property statuses are. </p>
+        <p>This will enable you to track the offered properties that have been reserved and what their current offered property statuses are. Unfortunately, you will not be able to see who has reserved this property if the reserving LA is different to your own. It is very important that LAs make other LAs aware immediately after they have reserved a property for this reason alone.  This will also help to mitigate situations where two people are potentially looking to match to the same available property. </p>
         </section>
         <div class="article-divider"></div>
         <section>
@@ -1216,7 +1213,7 @@
             <td>Move on accommodation </td>
             <td>When someone has left hosted accommodation to become self-supported </td>
             <td>When someone has left one local authority to be hosted at another </td>
-            <td></td>
+            <td>When someone has left Wales to live in another country, this will either be to another UK region or another country outside of the UK (unless they are repatriating to Ukraine)</td>
         </tr>
         <tr>
             <td>Repatriation </td>
@@ -1403,21 +1400,22 @@
             <h3 id="update-existing-tracking-record" class="y-target">Updating an existing Placement Tracking</h3>
             <p>If you identify that need to make a change / update a placement tracking that you have created on the household page, it will be possible to do this, but you may be limited to what you can change.  Once a placement tracking has been updated, all changes will filter through to the linked applicant and sponsor placement tracking’s.  We refer to this as the ‘Parent / Child’ relationship between placement tracking’s (the parent being the household PT and the child being the applicant PT)</p>
 
-            <p>To update the start date of a placement tracking:</p>
+            <p>To update a placement tracking:</p>
             <ol>
                 <li>Go into the household placement tracking. </li>
                 <li>Select the PT you would like edit and click edit (you can also just double click on the record)</li>
                 <img src="assets/images/update_tracking23.png" alt="Update placement tracking menu">
                 <li>Once in the PT you can update any of the fields to add or remove information. </li>
-                <li>You can amend the start date to any date later than the original date set, unless this is the first ever PT created for the household. </li>
+                <li>You can only amend the start date of a PT to a later date than the original date set, if is the first ever PT created for the household. </li>
                 <li>Click save and close. </li>
-                <li>The changes will reflect on the applicant and sponsor PTs.</li>
+                <li>The changes will reflect on the applicant and sponsor PTs (if applicable)</li>
             </ol>
             <p>Please note:</p>
             <ol>
                 <li>If this is the first PT ever created for the household the start date can be altered to any date.</li>
-                <li>If there is a previous PT created before the one you wish to edit – you will only be able to update the start date to a later date, anything before the original date will throw up an error due to this being linked to the end date of the previous PT. </li>
+                <li>If the PT you are amending is the most recent PT, you will only be able to amend the start date to a later date.  If you attempt to select an earlier date that the original date selected you will see the below error.  </li>
                 <img src="assets/images/wrong_date23.png" alt="Menu prompt advising that the start date needs to be later then the previous date started." width="50%" height="50%">
+                <li>If the record you are trying to amend is in the middle of other PT’s both the start and end date fields will be locked and uneditable. </li>
                 <li>The end date of any PT will always be locked and you will not be able to update it – it is very important that when creating a new PT, the date selected is correct as this will impact the end date if the previous placement tracking.</li>
             </ol>
             <h3 id="pt-active-reservation" class="y-target">Creating PT’s when there is an active reservation </h3>
@@ -1480,7 +1478,7 @@
             <p><b>Please note:</b> the stages available on the Journey Status are dependent on the applicant’s route. You may need to check whether the applicant’s is travelling under the Super Sponsor or Individual Sponsor route before changing the applicant’s Journey Status, to ensure you update the correct codes. </p>
             <p><a href="#summary-of-processes">Summary of Processes</a> shows the Journey Statuses and definitions.</p>
             <h3 id="updating-multiple-records" class="y-target">Updating multiple records with the same journey status</h3>
-            <p>There will be some instances, such as updating a journey status, where it is better to update multiple records of the same household.  Particularly when moving from SS07 – SS08 and SS08 – SS09.   </p>
+            <p>There will be some instances, such as updating a journey status, where it is better to update multiple records of the same household at the same time.</p>
             <p>To update multiple records with the same information: </p>
             <ol>
                 <li>Double-click on the Applicant Household ID (FAM# or WG#).  </li>
@@ -1488,7 +1486,7 @@
                 <li>Once you have selected the required applicants, click the Edit button just above the table. This will open the Edit menu:</li>
                 <img src="assets/images/edit-menu.png" alt="edit menu">
                 <div class="vspacer"></div>
-                <li>You can then update the SS Journey Status or any other appropriate fields for the multiple applicants. </li>
+                <li>You can then update the SS/IS Journey Status or any other appropriate fields for the multiple applicants. </li>
                 <img src="assets/images/number-of-records.png" alt="Check the number of records you are updating">
                 <li>Make sure to click the Save button <span><img src="assets/images/save-button-blue.png" alt="blue save button"></span> once you have made your changes. </li>
             </ol>
@@ -1572,14 +1570,14 @@
                 <li>Select the appropriate relationship and save your changes by clicking the small disk icon on the right-hand side of the table <span><img src="assets/images/small-disk-icon.png" alt=""></span></li>
                 <li>The host linked to the new household will automatically link to the new added applicant and will appear on the locked sponsor section of the applicant page.</li>
                 <li>A case note will be automatically generated which will show the household ID they were in and their new household ID reference.</li>
-                <li>You will now need to <a href="#updating-checks-box">amend the Household Housing Needs record</a> and email <a href="mailto:WNSManagement@cardiff.gov.uk">WNSManagement@cardiff.gov.uk</a> requesting deletion of the now orphaned housing need record, for the person that has just joined the family. For example, Maurice Jones.</li>
+                <li>You will now need to <a href="#updating-checks-box">amend the Household Housing Needs record</a> </li>
             </ol>
             <p><b>Please note:</b></p>
             <ul>
-                <li>It is imperative that each household has a lead applicant. It will usually be included with the contact centre information, but if not, a lead applicant will need to be identified for each household. </li>
+                <li>It is imperative that each household has a lead applicant. For SS records it will usually be included with the contact centre information, but if not, a lead applicant will need to be identified for each household, the LA will need to identify these for IS applicants.</li>
                 <li>If the person separating from the house is the lead applicant, you will need to reassign the lead applicant role before you are able to move them from the household. You can read more about reassigning the lead applicant for a household under the <a href="#changing-lead-applicant-status">Changing lead applicant status</a> section of this guide.</li>
                 <li>The new household created will have a WG reference rather than a FAM reference as the changes have been made within the system. </li>
-                <li>You must update the <a href="#updating-existing-housing-need">linked housing need</a> of the original household from which the applicant has been removed. </li>
+                <li>You must update the <a href="#updating-existing-housing-need">housing need</a> of the original household from which the applicant has been removed. </li>
             </ul>
         </section>
         <div class="article-divider"></div>
@@ -1734,7 +1732,7 @@
                 <li>The Case Management Team will contact the onward Local Authority and submit the request via Foundry, if accepted they will confirm back to the Welsh Local Authority once Foundry has been updated </li>
                 <li>Ensure the <a href="#using-case-notes">case notes</a> record that the onward destination local authority has agreed to the transfer.</li>
                 <li>Update the move on reason of the household’s existing placement.</li>
-                <li><a href="#creating-placement-record">Create a new placement record</a> providing their new cross border address and date of transfer. If this is not possible, add the country to which they are moving to.</li>
+                <li><a href="#creating-placement-record">Create a new placement record</a> for 'move on accomodation'providing their new cross border address and date of transfer. If this is not possible, add the country to which they are moving to.</li>
                 <li>Select either (England), (Northern Ireland) or (Outside of UK) within the Local Authority mandatory field. </li>
             </ol> 
             <p><b>Scotland does not currently use Foundry so this process will not be applicable to those who are requesting to leave the country to live in Scotland.</b></p>  
@@ -1887,6 +1885,7 @@
                     </ol>    
                 </p>
             </ol>
+            <p>Please note that repatriation only applies to those individuals who have returned to their home country (Ukraine).  If the individuals have moved to another country other than the UK you will need to complete the steps details in the ‘if the person is leaving Wales’ section and ensure you select the Local Authority as (outside of Wales).</p>
         </section> 
         <div class="article-divider"></div>
         <section>
@@ -1902,13 +1901,18 @@
                 <img src="assets/images/open-blank-sponsor-record.png" alt="open a blank sponsor record" width="50%" height="50%">
                 <li>Complete the fields within the Summary Tab noting the following:</li>
                 <ol class="lower-alpha">
-                    <li>Within the ‘Type’ field, select host to reflect that it is someone who has offered accommodation through Expression of Interest (EoI) as part of the Super Sponsor Scheme. In the unlikely event you need to create a new record for someone offering accommodation through the Homes for Ukraine Scheme, you would select Sponsor.</li>
+                    <li>Within the ‘Type’ field, select host to reflect that it is someone who has offered accommodation either through Expression of Interest (EoI) or directly with the applicant. In the unlikely event you need to create a new record for someone offering accommodation through the Homes for Ukraine Scheme, you would select Sponsor.</li>
                     <li>Address refers to the home that the host lives in, rather than the address of the accommodation being offered.</li>
                     <li>It is really important that you include contact details for the host including both telephone number and email address. </li>
                     <li>Once checks are completed and the host is active and receiving their monthly contribution, you will be able to add their finance system reference and other details within this section for reference. It will not link directly to your local finance systems.</li>
                 </ol>
                 <li>Update <a href="#using-case-notes">Case Notes and Activities</a> as appropriate.</li>
                 <li>Click Save</li>
+                <li>Once saved you now need to assign the sponsor record to ensure everyone in your local authority group can access the records
+                    <ol><li>To do this click the assign button in the top navigation bar. </li>
+                    <li>In the pop up change the ‘Assign to’ box to user or team.</li>
+                    <li>5)Select your local authority and click assign.</li></ol>
+                </li>
             </ol>
             <h3 id="adding-host-addresses" class="y-target">Adding host addresses</h3>
             <p>A host address is the address of accommodation being offered to house Ukrainians travelling to Wales.  A host can have multiple addresses depending on when the number of properties being offered. The host may or may not live at the address.</p>
@@ -1924,7 +1928,7 @@
                     <li>Staying with Sponsor field indicates whether the property is the main residence of the sponsor and their family e.g. someone would be allocated a room in the sponsors/host house rather than accommodation separately owned by the sponsor/host.</li>
                 </ol>
                 <li>Save the record.</li>
-                <li>You now need to assign the sponsor and host address records to ensure everyone in your local authority group can access the records. Select the address and click Assign Host Address.</li>
+                <li>You now need to assign the host address records to ensure everyone in your local authority group can access the records. Select the address and click Assign Host Address.</li>
                 <img src="assets/images/assign-top-nav.png" alt="assign button">
                 <li>Assign to User or Team and then hit enter to browse your local authority</li>
                 <img src="assets/images/user-or-team-selector.png" alt="user or team selector">
@@ -1943,6 +1947,16 @@
             <img src="assets/images/moveon/offered-property2.png" alt="Screenshot of host address screen in the offered property tab with Source record not selected message">
             <p>Once the current placement ends and the host address becomes available, the offered property status will revert to ‘Pending Checks’, and a blank offered property form will generate in the offered property tab.  It will be your responsibility to communicate with the host to enquire if they wish to host another family.  If they do, all previous checks should be confirmed to still be valid before making changing the offered property status to available.</p>
             <p><b>Please note: </b>If the host no longer wishes to house any new applicants, then their records need to be set to withdrawn and this will automatically set the offered property tab to removed. </p>
+            <h3 id="workaround-offered-property" class="y-target">Workaround for host addresses that haven't generated an offered property tab</h3>
+            <p>From time to time there may be other occasions where previous Sponsor data does not produce an offered property form, the tab shows as ‘source not selected’ and a work around is required to produce a new offered property tab. This will usually only be the case for historic data and on occasions where original applicants are no shows and therefore there has been no move on PTs created which would normally force the creation of an offered property.  </p>
+            <p>In these instances, to generate an offered property tab you should:</p>
+            <ol><li><a href="#adding-host-addresses">Create a new host address</a> on the host address tab, copying all the information from the original host address record.</li>
+            <li>Assign the new host address to your local authority.</li>
+            <li>This will generate an offered property tab with the status ‘new’.</li>
+            <li>Contact the nationofsanctuarysurvey@gov.wales mailbox to explain you have created a new host address as part of the work around and require the old host address to be deleted. </li></ol>
+            <p>The UDP team will then remove the previous host address from the record so that you can continue to work with the record to ensure its ready to be made available.</p>
+
+
             <p>To view all offered properties in your area you will need to access the Offered Properties tab via the left have navigation:</p>
             <img src="assets/images/moveon/offered-property-drop.png" alt="Screenshot of offered properties selected in navigation pane">
             <p>You can then access the view ‘My LA New / Pending Properties’ from the dropdown menu which will show all new offered properties and all properties currently pending checks. </p>
@@ -1951,7 +1965,7 @@
             <img src="assets/images/moveon/la-pending-property2.png" alt="Screenshot of LA new / pending properties with My LA available view">
        
             <h3 id="searching-offered-property" class="y-target">Searching for an Offered Property </h3>
-            <p>Once all checks are complete on an EOI record, the offer becomes viable and the status will need to be changed from ‘pending checks’ to ‘available’ on the offered property tab.</p>
+            <p>Once all checks are complete on an EOI record, the offer becomes viable, and the status will need to be changed from ‘pending checks’ to ‘available’ on the offered property tab.</p>
             <img src="assets/images/moveon/offered-property-status.png" alt="Screenshot of Offered Property Status drop down set to Available">
             <p>This means that the record will be viewable to all local authorities across Wales for them to reserve where appropriate. </p>
             <p>It is imperative that the housing need tab is kept up to date to ensure an accurate search is carried out and the correct host / household match is made. </p>
@@ -1968,7 +1982,7 @@
                 <li>Each address will require a different annotation to show it’s a different part of the house/ building – e.g. Flat 1 / Flat 2: </li>
                 <img src="assets/images/host-multiple-addresses-23.png" alt="Host address menu displaying multiple addresses">
             </ol>
-            <p>Each new address will generate an <a href="user-guide.html#offered-property-tab">offered property tab</a> which will also need to be completed alongside the host address details.</p>
+            <p>Each new address will generate an <a href="user-guide.html#offered-property-tab">offered property tab</a> which will also need to be completed alongside the host address details. Please remember to assign each new address to your Local Authority to ensure it is visible by all users within your area.</p>
 
             <h3 id="linking-household-record" class="y-target">Linking a household record and a Sponsor/host record</h3>
             <p>When linking a sponsor to a household there are certain steps to follow.</p>
@@ -2008,7 +2022,8 @@
                 <li>The system will automatically remove the host details from the locked fields on the household page (after about 30-40 seconds) </li>
             </ol>
             <P>The host/host address fields will now be empty, the link between sponsor/host and applicant will be removed and the sponsor/host will now become available. The offered property status will also revert back to pending checks to enable you to start the triage process for move on, if relevant. </P>
-            <P>Please note: if not all members of the household are no show’s then you will need to split the household removing the no show applicants into their own household group.</P>
+            <P>Please note: If not all members of the household are no show’s then you will need to split the household removing the no show applicants into their own household group.</P>
+            <p>For SS applicants, this will only apply when a host has been directly allocated to a household and then the household doesn’t show. </p>
 
             <h3 id="recording-additional" class="y-target">Recording additional sponsor household members</h3>
             <p>A sponsor household member is a person that is living with the applicant at the time the application to be a sponsor is made.  For example, a child or partner.</p>
@@ -2022,10 +2037,12 @@
                 <li>Complete the remainder of the fields.</li>
                 <li>Click Save or Save & Close.</li>
             </ol>
+            <p>Alternatively, you can access via the sponsor household tab on the household page and select +new sponsor household.  This will take you to the new sponsor household page and aut0 populate the sponsor details. </p>
+            <img src="assets/images/new-sponsor-household-page.png" alt="view of the new sponsor household page">
 
 
             <h3 id="handling-duplicate-records" class="y-target">Handling Duplicate Applicant Records</h3>
-            <p>Many Ukrainians have applied on several visa schemes in order to seek sanctuary in Wales and the UK. If they have had a visa approved for more than one scheme, the data in the platform may reflect this, appearing as duplicate records. </p>
+            <p>Many Ukrainians have applied on several visa schemes to seek sanctuary in Wales and the UK. If they have had a visa approved for more than one scheme, the data in the platform may reflect this, appearing as duplicate records. </p>
             <p>It may be clear to you which sponsorship scheme a person is travelling on, for example if they arrive at a Welcome Centre (super sponsor) or if they have their own sponsor (Individual Sponsor). If it is not clear, you can ask the individual to confirm which scheme they are travelling on, or you can ask to check their application number on any emails or documentation they have brought with them.</p>
             <p>When you have established which application is the duplicate, take the following steps to mark out the duplicate record and separate it from any existing household groups:</p>
             <ol>
@@ -2035,13 +2052,13 @@
                 <li>Under status reason, select Move to another Visa Scheme.</li>
                 <img src="assets/images/move-to-another-visa-scheme.png" alt="move to another visa scheme">
                 <li>Remove the duplicate applicant from any household group they are in using the <a href="#removing-applicant-new-household">Removing an Applicant to a New Household</a> guide. </li>
-                <li>Ensure the linked housing needs record reflects the correct number of people and their requirements using the <a href="#updating-existing-housing-need">Updating an existing housing needs record</a> guide</li>
+                <li>Ensure the housing needs record reflects the correct number of people and their requirements using the <a href="#updating-existing-housing-need">Updating an existing housing needs record</a> guide</li>
                 <li>To remove these duplicates from your system or personalised Views, filter the SS or IS journey status column to ensure SS11 / IS100 is not included.</li>
             </ol>
 
             <h3 id="rejected-sponsors" class="y-target">Rejected or Withdrawn Sponsors / Hosts</h3>
-            <p>There may be occasions where a sponsor/host wishes to withdraw their interest in hosting or is rejected as a result of failed checks, such as local government/ property checks.</p>
-            <p>If a host expresses that they wish to ‘withdraw’ from the scheme or is ‘rejected’ as a result of failed checks the record will need to be set to the correct sponsor journey status in order for the system to deactivate their records.</p>
+            <p>There may be occasions where a sponsor/host wishes to withdraw their interest in hosting or is rejected because of failed checks, such as local government/ property checks. </p>
+            <p>If a host expresses that they wish to ‘withdraw’ from the scheme or is ‘rejected’ because of failed checks the record will need to be set to the correct sponsor journey status in order for the system to deactivate their records.  </p>
             <img src="assets/images/sponsor-journey23.png" alt="Menu showing the selection to make under sponsor journey.">
             <p>Once selected the system will automatically deactivate these records to prevent them from showing up on the active sponsors list.</p>
             <ul>
@@ -2071,15 +2088,15 @@
             <p>The case management team will then mark the sponsor as unsuitable on Foundry, check for any duplicates and raise any additional concerns. Should there be any further requirements/ concerns, CMT will liaise directly with the relevant LAs. </p>
             <p>Please note: It is not the LA’s responsibility to log these cases within foundry, please pass these onto the Case Management Team.</p>
             <h3 id="duplicate-host-no-approved" class="y-target">Duplicate Hosts with no approved applicants attached</h3>
-            <p>From time to time you may come across an additional host record.  These will usually have no linked applicants or PTs attached.</p>
+            <p>From time to time, you may come across an additional host record.  These will usually have no linked applicants or PTs attached.</p>
             <p>It will normally show an application linked with no applicant name which suggests that the applicant has not yet been approved.</p>
             <img src="assets/images/duplicate-hosts23.png" alt="Image showing application screen with no applicant">
             <p>To avoid having multiple records in the system for hosts/sponsors you can deactivate these by selecting their sponsor/host journey status to HST006 – Duplicate. </p>
             <p>The record will be automatically de-activated</p>
             <img src="assets/images/hst00623.png" alt="Sponsor page showing HST006 selected">
             <p>IMPORTANT: these records should only be deactivated if there is a live active record for the sponsor/host already in the system.</p>
-            <p>If this is a new sponsor/host record with multiple duplicates linked to different blank (unapproved) applications, these will need to be kept active until the applications have been approved.  This is due to the likelihood that the individual applicants will for a household group once approved and the duplicated sponsor records will be automatically deactivated as part of the deduplication process at data load. </p>
-            <p>If you need to access a Deactivated sponsor record – you can locate these via the inactive sponsors view:</p>
+            <p>If this is a new sponsor/host record with multiple duplicates linked to different blank (unapproved) applications, these will need to be kept active until the applications have been approved.  This is due to the likelihood that the individual applicants will form a household group once approved and the duplicated sponsor records will be automatically deactivated as part of the deduplication process at data load. </p>
+            <p>If you need to access a deactivated sponsor record – you can locate these via the inactive sponsors view:</p>
             <img src="assets/images/inactive-sponsors23.png" alt="Inactive sponsors dropdown">
             <h3 id="updating-sponsor-comms" class="y-target">Updating Sponsor Communication Preferences</h3>
             <p>A sponsor/host may make contact to state they don’t want to receive any communication, however it is necessary that essential communications are still carried out. This means they should only receive information from Welsh Government regarding their current sponsor/hosting position.  Restricting their communication preferences to essential communication only means they will stop receiving updates regarding things such as Ukrainian National holiday updates/ information on local Ukrainian events etc. </p>
@@ -2344,7 +2361,7 @@
                     <td>
                         <p>Change Status </p>
                         <p>Close Welcome Centre placement record </p>
-                        <p>Create a new placement record for their permanent accommodation </p>
+                        <p>Create a new placement record for their permanent accommodation. If this is a sponsor/host placement  then the reservation process should be followed. </p>
                     </td>
                 </tr>
                 <tr>
@@ -2450,7 +2467,7 @@
                         <p>Has clear details of WC been provided to the citizen </p>
                         <p>Are details of the citizens travel arrangements provided </p>
                         <p>Confirmed that citizen has started / will start travelling to UK  </p>
-                        <p>Has a note at the top of the timeline been added under title EXPECTED ARRIVAL DATE/ TIME </p>
+                        <p>Has a note at the top of the timeline been added under title EXPECTED ARRIVAL DATE/ TIME and the contact centre confirmed arrival date box has been updated.  </p>
                     </td>
                 </tr>
                 <tr>
@@ -2543,7 +2560,7 @@
                 <tr>
                     <td><b>SS09 - Move on accommodation allocated</b></td>
                     <td>Permanent accommodation has been identified and allocated to the family, but the family have not yet moved from the Welcome Centre</td>
-                    <td>Link Sponsor record to household </td>
+                    <td>Link Sponsor record to household via reservation process</td>
                     <td>Local authority</td>
                     <td></td>
                 </tr>
@@ -2553,10 +2570,9 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <p>Close the placement record for welcome centre</p>
                         <p>Open new placement record and record details of new address on system. </p>
                         <p>When household leave the Welcome Centre, change their status to SS10. </p>
-                        <p>Add a status reason (not mandatory)</p>
+                        <p>Add a relevant status reason</p>
                     </td>
                 </tr>
                 <tr>
@@ -2621,10 +2637,10 @@
                         <p>A welfare visit should be arranged to check the new arrival has settled with any support needs identified.</p>
                     </td>
                     <td>
-                        <p>Open a new placement tracking to capture the details of when the new hosting arrangement began.</p>
+                        <p>Follow the reservation process to open a new placement tracking to capture the details of when the new hosting arrangement began.</p>
                         <p>Create a case note to capture that a welfare visit has been made. </p>
                         <p>To commence financial support, record on system the day of month for payments run/ payment eligible date. </p>
-                        <p>Update applicant check “Emergency Paid Issued” and add a case note with details</p>
+                        
                     </td>
                     <td>Local authority</td>
                     <td>
@@ -2656,12 +2672,12 @@
                         <p>This status may precede IS03 as an individual may be rematched before they move into an alternative placement.</p>
                     </td>
                     <td>
-                        <p>This will vary based on the category of re-match. Please see Pg 39-42 of the User Guide for specific guidance based on the category. </p>
+                        <p>This will vary based on the category of re-match. Please see the reassignment section of the User Guide for specific guidance based on the category. </p>
                         <p>Types of activity on the platform include: </p>
                         <ul>
                             <li>Add new Sponsor record and Sponsor Address details if they are not on the platform. </li>
                             <li>Use Case Notes to record any necessary checks</li>
-                            <li>Link Household and Sponsor.</li>
+                            <li>Link Household and Sponsor via reservation process.</li>
                         </ul>
                     </td>
                     <td>Local authority</td>
@@ -2680,7 +2696,7 @@
                     </td>
                     <td>
                                                 <ul>
-                            <li>Close their open placement tracking record.</li>
+                          
                             <li>Open a new placement tracking record with as much information on where they are gone</li>
                             <li>Update Case Notes as required</li>
                         </ul>
